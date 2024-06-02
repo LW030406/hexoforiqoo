@@ -157,8 +157,8 @@
       </tags>
   </entry>
   <entry>
-    <title>域名和CF搭配的妙用：拥有自己的免费节点</title>
-    <url>/30/</url>
+    <title>域名，cf节点和魔法</title>
+    <url>/02/</url>
     <content><![CDATA[<p>你是不是因为INS X GPT等软件无法使用而苦恼呢？是否因为X连会员太贵而苦恼呢？今天就教你一个简单的做法，来实现简单的操作吧</p>
 <h1 id="本期：域名和CF搭配的妙用：拥有自己的免费节点"><a href="#本期：域名和CF搭配的妙用：拥有自己的免费节点" class="headerlink" title="本期：域名和CF搭配的妙用：拥有自己的免费节点"></a>本期：域名和CF搭配的妙用：拥有自己的免费节点</h1><h2 id="首先，你要准备什么？"><a href="#首先，你要准备什么？" class="headerlink" title="首先，你要准备什么？"></a>首先，你要准备什么？</h2><h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>域名的购买可以说比较容易找到渠道，买一些XYZ后缀，或者我买的SITE后缀域名，价格也只需要十块左右就能买到一年期的域名<br>了解了前面小段所说的，就可以继续下一步了：去往购买的网站</p>
 <h3 id="购买域名的地方：namecheap"><a href="#购买域名的地方：namecheap" class="headerlink" title="购买域名的地方：namecheap"></a>购买域名的地方：namecheap</h3><p>推荐这家的理由 </p>
@@ -186,7 +186,7 @@
 <li>进入NameCheap的管理页面后，即可看到默认的NS记录</li>
 <li>接下来继续我们的教程</li>
 </ol>
-<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#x43;&#114;&#97;&#x7a;&#121;&#x32;&#52;&#x30;&#x33;&#x40;&#x6f;&#x75;&#x74;&#x6c;&#111;&#x6f;&#107;&#46;&#x63;&#111;&#x6d;">&#x43;&#114;&#97;&#x7a;&#121;&#x32;&#52;&#x30;&#x33;&#x40;&#x6f;&#x75;&#x74;&#x6c;&#111;&#x6f;&#107;&#46;&#x63;&#111;&#x6d;</a></p>
+<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#x43;&#x72;&#x61;&#122;&#121;&#50;&#52;&#48;&#51;&#64;&#x6f;&#117;&#x74;&#108;&#111;&#111;&#x6b;&#46;&#99;&#x6f;&#x6d;">&#x43;&#x72;&#x61;&#122;&#121;&#50;&#52;&#48;&#51;&#64;&#x6f;&#117;&#x74;&#108;&#111;&#111;&#x6b;&#46;&#99;&#x6f;&#x6d;</a></p>
 <h3 id="修改域名默认的NS记录"><a href="#修改域名默认的NS记录" class="headerlink" title="修改域名默认的NS记录"></a>修改域名默认的NS记录</h3><p>进入后台管理界面，你可以看到红圈部分就是默认NS的位置，这张图是修改好的，已经托管到了CF上面<br><img src="https://png1.xiaotaolive.cfd/ns%E8%AE%B0%E5%BD%95.png"></p>
 <ol>
 <li>既然你已经修改好了NS记录，那么过一段时间，CF检测通过了，这个域名就会在上一张图显示出来，我这里托管的域名是Xtxtudy.site</li>
