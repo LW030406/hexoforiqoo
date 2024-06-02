@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>搭建个人网站,属于自己的知识库</title>
+    <url>/02/</url>
+    <content><![CDATA[<h1 id="一个超实用的个人网站"><a href="#一个超实用的个人网站" class="headerlink" title="一个超实用的个人网站"></a>一个超实用的个人网站</h1><blockquote>
+<p>hexo是什么？</p>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/">Markdown</a>（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<h2 id="我需要准备什么？"><a href="#我需要准备什么？" class="headerlink" title="我需要准备什么？"></a>我需要准备什么？</h2><ol>
+<li>首先是他必备的运行环境，NodeJS和Git，下面会准备链接<ol>
+<li>GIt：<a href="https://pan.xiaotaolive.cfd/d/Web_onedrive/hexo%E6%96%87%E4%BB%B6/Git-2.45.1-64-bit.exe?sign=7_cjKWQnRxsPfm_byWdE9fdPC0xO8fP2GdnSX-9c06k=:0">GIT 下载链接</a></li>
+<li>NodeJS：<a href="https://pan.xiaotaolive.cfd/d/Web_onedrive/hexo%E6%96%87%E4%BB%B6/node-v20.13.1-x64.msi?sign=keCrywP_47qGsdNmlp_WvSRDzqLLeRSuifJVROXnwgI=:0">Nodejs安装包</a></li>
+</ol>
+</li>
+</ol>
+<h2 id="安装组件"><a href="#安装组件" class="headerlink" title="安装组件"></a>安装组件</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>直接点击安装即可，安装完成后打开<strong>cmd</strong></p>
+<p>按住<strong>win+R</strong>，输入<strong>cmd</strong>即可打开命令行窗口</p>
+<p>输入下列代码，查看版本</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<p>​	</p>
+<p>安装完成会显示版本号，则说明安装成功</p>
+<h3 id="安装NodeJS"><a href="#安装NodeJS" class="headerlink" title="安装NodeJS"></a>安装NodeJS</h3><p>点击下载链接，打开安装即可，和上一步一样</p>
+<p>按住<strong>win+R</strong>，输入<strong>cmd</strong>即可打开命令行窗口</p>
+<p>输入下列代码，查看版本</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node --version</span><br></pre></td></tr></table></figure>
+
+<p>安装完成会显示版本号，如我的版本为V20.13.1</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>组件安装完成后，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<p>即可开始安装hexo</p>
+<h3 id="创建一个hexo目录"><a href="#创建一个hexo目录" class="headerlink" title="创建一个hexo目录"></a>创建一个hexo目录</h3><p>安装好后，在你空域磁盘的目录下创建一个新的文件夹，如<strong>blog</strong></p>
+<p>然后双击进入文件夹</p>
+<p>在显示目录的位置单击，输入<strong>cmd</strong>即可唤醒命令窗口</p>
+<h3 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h3><p>打开cmd窗口之后，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>即可开始hexo 的初始化，等待初始化完成，你就可以看到目录了</p>
+<h3 id="预览hexo的模样"><a href="#预览hexo的模样" class="headerlink" title="预览hexo的模样"></a>预览hexo的模样</h3><p>初识的hexo默认有一篇教你起步的<strong>HelloWorld</strong>文章，会告诉你三个命令</p>
+<p>分别是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean 用于清理缓存</span><br><span class="line">hexo g 生成静态页面</span><br><span class="line">hexo d 部署你写作的内容</span><br></pre></td></tr></table></figure>
+
+<p>这三个指令作为常用的指令，是接触hexo必须要记住的</p>
+<h2 id="安装一个好看的主题"><a href="#安装一个好看的主题" class="headerlink" title="安装一个好看的主题"></a>安装一个好看的主题</h2><p>hexo博客带有主题系统，可以通过</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone 附带链接把主题拷贝到本地</span><br></pre></td></tr></table></figure>
+
+<p>主题存放在hexo目录的themes下</p>
+<p>在你的cmd窗口输入<strong>cd themes</strong> 即可进入这个目录</p>
+<p>以<strong>Next</strong>主题为例，在命令行输入以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next next</span><br></pre></td></tr></table></figure>
+
+<p>即可下载出一个**&#x2F;themes&#x2F;next**了</p>
+<p>打开文件夹，再进入<strong>themes下的themes</strong>，即<strong>blog&#x2F;themes&#x2F;themes</strong>，那么存储<strong>Next主题的路径就是：blog&#x2F;themes&#x2F;themes&#x2F;Next</strong></p>
+<p>进入目录选择<strong>next文件夹</strong>，**右键复制，粘贴到，blog&#x2F;themes&#x2F;**即可</p>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p><strong>blog根目录下记录了hexo的全局配置</strong></p>
+<p>下列代码区就是文件的大概内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## Docs: https://hexo.io/docs/configuration.html</span><br><span class="line">## Source: https://github.com/hexojs/hexo/</span><br><span class="line"></span><br><span class="line"># Site</span><br><span class="line">title: 站点标题</span><br><span class="line">subtitle: &#x27;&#x27; 副标题</span><br><span class="line">description: &#x27;&#x27; 网站描述</span><br><span class="line">keywords: 网站的关键词。支持多个关键词。</span><br><span class="line">author: 您的名字</span><br><span class="line">language: 网站语言，中文设置zh_CN即可</span><br><span class="line">timezone: &#x27;&#x27; 时区，核对时间，设置为Asia/Shanghai 即可</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: 网址, 必须以 http:// 或 https:// 开头</span><br><span class="line">root: 网站根目录</span><br><span class="line">permalink: 文章的 永久链接 格式</span><br><span class="line">permalink_defaults: 永久链接中各部分的默认值</span><br><span class="line">pretty_urls: 改写 permalink 的值来美化 URL</span><br><span class="line">  trailing_index: true # 是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span><br><span class="line">  trailing &#x27;index.html&#x27; 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span><br><span class="line">  trailing_html: true # Set to false to remove trailing &#x27;.html&#x27; from permalinks</span><br><span class="line"></span><br><span class="line"># Directory</span><br><span class="line">source_dir: 资源文件夹，存放内容。默认值source</span><br><span class="line">public_dir: 公共文件夹，于存放生成的站点文件。默认值public</span><br><span class="line">tag_dir: 标签文件夹，默认值tags</span><br><span class="line">archive_dir: 归档文件夹，默认值archives</span><br><span class="line">category_dir: 分类文件夹，默认值categories</span><br><span class="line">code_dir: Include code文件夹，source_dir下的子目录，默认值downloads/code</span><br><span class="line">i18n_dir: 国际化（i18n）文件夹，默认 :lang</span><br><span class="line">skip_render: 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。默认留空</span><br><span class="line"></span><br><span class="line"># Writing 这部分没有特殊需求保持不变即可</span><br><span class="line">new_post_name: :title.md # File name of new posts</span><br><span class="line">default_layout: post</span><br><span class="line">titlecase: false # Transform title into titlecase</span><br><span class="line">external_link:</span><br><span class="line">  enable: true # Open external links in new tab</span><br><span class="line">  field: site # Apply to the whole site</span><br><span class="line">  exclude: &#x27;&#x27;</span><br><span class="line">filename_case: 0</span><br><span class="line">render_drafts: false</span><br><span class="line">post_asset_folder: false 启用资源文件夹，用来存放本地的图片，开启改为 true</span><br><span class="line">relative_link: false</span><br><span class="line">future: true</span><br><span class="line">syntax_highlighter: highlight.js</span><br><span class="line">highlight:</span><br><span class="line">  line_number: true</span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">  wrap: true</span><br><span class="line">  hljs: false</span><br><span class="line">prismjs:</span><br><span class="line">  preprocess: true</span><br><span class="line">  line_number: true</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">  	</span><br><span class="line"></span><br><span class="line"># Home page setting</span><br><span class="line"># path: Root path for your blogs index page. (default = &#x27;&#x27;)</span><br><span class="line"># per_page: Posts displayed per page. (0 = disable pagination)</span><br><span class="line"># order_by: Posts order. (Order by date descending by default)</span><br><span class="line">index_generator:</span><br><span class="line">  path: &#x27;&#x27;</span><br><span class="line">  per_page: 10</span><br><span class="line">  order_by: -date</span><br><span class="line"></span><br><span class="line"># Category &amp; Tag</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">tag_map:</span><br><span class="line"></span><br><span class="line"># Metadata elements</span><br><span class="line">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span><br><span class="line">meta_generator: true</span><br><span class="line"></span><br><span class="line"># Date / Time format</span><br><span class="line">## Hexo uses Moment.js to parse and display date</span><br><span class="line">## You can customize the date format as defined in</span><br><span class="line">## http://momentjs.com/docs/#/displaying/format/</span><br><span class="line">date_format: YYYY-MM-DD  日期格式</span><br><span class="line">time_format: HH:mm:ss  时间格式</span><br><span class="line">## updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span><br><span class="line">updated_option: &#x27;mtime&#x27;  当 Front Matter 中没有指定 updated 时 updated 的取值</span><br><span class="line"></span><br><span class="line"># Pagination</span><br><span class="line">## Set per_page to 0 to disable pagination</span><br><span class="line">per_page: 10  每页显示的文章量 (0 = 关闭分页功能)</span><br><span class="line">pagination_dir: page  分页目录</span><br><span class="line"></span><br><span class="line"># Include / Exclude file(s) 没有需要不写</span><br><span class="line">## include:/exclude: options only apply to the &#x27;source/&#x27; folder</span><br><span class="line">include: Hexo 默认会不包括 source/ 下的文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下</span><br><span class="line">exclude: Hexo 不包括 source/ 下的这些文件和目录</span><br><span class="line">ignore: Hexo 会忽略整个 Hexo 项目下的这些文件夹或文件</span><br><span class="line"></span><br><span class="line"># Extensions 主题配置，在theme后输入主题名字即可</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: particlex</span><br><span class="line"></span><br><span class="line"># Deployment 部署部分的设置，如部署到GitHub或者gitee，gitlab</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: 类型，写git</span><br><span class="line">  repo: github的仓库地址，需要提前配置ssh</span><br><span class="line">  branch: 部署分支，main或master都可以</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo中加入本地图片的实现"><a href="#hexo中加入本地图片的实现" class="headerlink" title="hexo中加入本地图片的实现"></a>hexo中加入本地图片的实现</h2><ol>
+<li><p>首先需要打开配置文件<strong>config.yml</strong>。找到<strong>post_asset_folder: false</strong>设置项，把<strong>flase改为true</strong>，保存文件</p>
+</li>
+<li><p>安装扩展，找到你的cmd窗口，hexo-asset-image</p>
+<ol>
+<li><p>方法为在博客根目录下运行cmd，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install https://github.com/xcodebuild/hexo-asset-image.git --save</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+<p>完成上述配置后，每次创建新的文章，都会生成一个资源文件夹，里面即可存放你的图片，如截图，壁纸，文件内容，学习资料等</p>
+<ol>
+<li><p>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n 文件名  创建新的文件，也会生成同名的文件夹，可以存放资源进去</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>本地图片的引用方法</p>
+<ol>
+<li><p>使用Typora，点击<strong>格式</strong>，<strong>图像</strong>，<strong>插入本地图像</strong>，选择刚刚对应文件夹的目录即可</p>
+</li>
+<li><p>引用语法</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 引用图片的时候一定要带上目录名称作为路径</span><br><span class="line">![本地图片](测试文章/本地图片.jpg)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>补充说明</p>
+</li>
+<li><blockquote>
+<p>显然，在hexo中引入图片的方式稍微有点繁琐，即：必须在<code>_post</code>目录下新建一个与文章同名的目录，然后将需要引用的图片文件都放在该目录中。 还好使用插件<code>hexo-asset-image</code>能够帮助我们自动创建图片目录（每次都会自动创建，如果在文章中不需要引用图片资源，可以手动将该目录删除）。</p>
+<p>那么，为什么需要将文章引用的图片放置在与文章同名的目录呢？ 原因是：在执行<code>hexo g</code>命令的时候会将文章转换为一个<code>index.html</code>文件，该文件路径为<code>public/年/月/日/文章名称/index.html</code>，同时也会将文章中引用的图片文件拷贝到与<code>index.html</code>文件相同的目录中。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><h3 id="首先，要知道入口在哪里"><a href="#首先，要知道入口在哪里" class="headerlink" title="首先，要知道入口在哪里"></a>首先，要知道入口在哪里</h3><p>GitHub：<a href="https://github.com/">注册入口</a></p>
+<h3 id="其次，你要准备这些"><a href="#其次，你要准备这些" class="headerlink" title="其次，你要准备这些"></a>其次，你要准备这些</h3><ol>
+<li>可用的邮箱</li>
+<li>注册后创建一个仓库</li>
+<li>本地的ssh密钥，用于免登录调用GitHub的仓库</li>
+</ol>
+<p>注册</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/507d433d1131e28e28971954b45072e9.png" alt="img"></p>
+<p>创建仓库，补充说明以下内容</p>
+<ol>
+<li>仓库名字设置为，用户名.GitHub.io</li>
+<li>如你的用户名是lulu，那么就是lulu.GitHub.io</li>
+<li>根据GitHub的规则，当部署到GitHubpages服务后，按照刚刚命名的仓库才会被识别</li>
+</ol>
+<p>根据规则，这样写</p>
+<p><img src="https://developer.qcloudimg.com/http-save/yehe-10581965/64a3b7752c3c3c6020606d39fe1bf3f9.png"></p>
+<h3 id="本地的ssh密钥"><a href="#本地的ssh密钥" class="headerlink" title="本地的ssh密钥"></a>本地的ssh密钥</h3><p>按住<strong>win+R</strong>，输入以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;muzihuaner&quot;</span><br><span class="line">git config --global user.email &quot;xxxxxx@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>第一项为你的GitHub用户名，第二项为注册邮箱</p>
+</li>
+<li><p>分别配置好以后，可以执行检查指令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>确认无误，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br><span class="line">email就是你注册GitHub的邮箱</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成的文件会存储到如下目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">c:\useers\用户名\.ssh 下</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如图所示位置<img src="https://developer.qcloudimg.com/http-save/yehe-10581965/226396db3e5a8db9b1358fb7d7151d3a.png"></p>
+</li>
+<li><p>将文件中的密钥写进去</p>
+</li>
+<li><p><img src="https://developer.qcloudimg.com/http-save/yehe-10581965/0944345dd0a726635ede14630e81ebcf.png"></p>
+</li>
+<li><p>确定文件目录后，根据下面的说明</p>
+<blockquote>
+<p><code>id_rsa</code>是你这台电脑的私人秘钥，<code>id_rsa.pub</code>是公共秘钥。把公钥放在GitHub上，当你连接自己的Github账号时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过Git上传你的文件到GitHub上。</p>
+</blockquote>
+</li>
+<li><p>找到<code>*SSH and GPG keys*</code>，新建SSH Key</p>
+</li>
+<li><p>以文本方式打开<code>id_rsa.pub</code>文件，将内容复制到Key，标题随便起，添加Key。</p>
+</li>
+</ol>
+<h2 id="配置config文件的部署"><a href="#配置config文件的部署" class="headerlink" title="配置config文件的部署"></a>配置config文件的部署</h2><p>打开**&#x2F;blog下的condig.yml**,找到<strong>deploy</strong>的内容,根据代码块的内容改写你的文档</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@githb.com:muzihuaner/muzihuaner.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装上传扩展"><a href="#安装上传扩展" class="headerlink" title="安装上传扩展"></a>安装上传扩展</h3><p>这个扩展是方便你对写作好的内容部署到你规定的仓库的,代码如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>上传依次输入这些指令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean 清理缓存</span><br><span class="line">hexo g 生成网页</span><br><span class="line">hexo d 部署到仓库(上传)</span><br><span class="line">hexo s 本地预览你的网页</span><br></pre></td></tr></table></figure>
+
+<p>确认无误即可上传部署了</p>
+<h2 id="开启pages服务"><a href="#开启pages服务" class="headerlink" title="开启pages服务"></a>开启pages服务</h2><h3 id="GitHub-pages"><a href="#GitHub-pages" class="headerlink" title="GitHub pages"></a>GitHub pages</h3><p>打开你的GitHub仓库,点击<strong>settings</strong>,在左侧栏找到<strong>pages</strong>选项</p>
+<p>按照下图的内容修改即可</p>
+<p><img src="D:\hexo\liblog\source_posts\1\pages.png" alt="案例"></p>
+<p>修改完后,即可用<strong>用户名.GitHub.io</strong>进行访问了,案例网站如下</p>
+<p><a href="lw030406.GitHub.io">案例网站</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>域名和CF搭配的妙用：拥有自己的免费节点</title>
+    <url>/30/</url>
+    <content><![CDATA[<p>你是不是因为INS X GPT等软件无法使用而苦恼呢？是否因为X连会员太贵而苦恼呢？今天就教你一个简单的做法，来实现简单的操作吧</p>
+<h1 id="本期：域名和CF搭配的妙用：拥有自己的免费节点"><a href="#本期：域名和CF搭配的妙用：拥有自己的免费节点" class="headerlink" title="本期：域名和CF搭配的妙用：拥有自己的免费节点"></a>本期：域名和CF搭配的妙用：拥有自己的免费节点</h1><h2 id="首先，你要准备什么？"><a href="#首先，你要准备什么？" class="headerlink" title="首先，你要准备什么？"></a>首先，你要准备什么？</h2><h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>域名的购买可以说比较容易找到渠道，买一些XYZ后缀，或者我买的SITE后缀域名，价格也只需要十块左右就能买到一年期的域名<br>了解了前面小段所说的，就可以继续下一步了：去往购买的网站</p>
+<h3 id="购买域名的地方：namecheap"><a href="#购买域名的地方：namecheap" class="headerlink" title="购买域名的地方：namecheap"></a>购买域名的地方：namecheap</h3><p>推荐这家的理由 </p>
+<blockquote>
+<p>1 价格优惠<br>2 可选后缀多<br>3 不需要任何身份信息<br>4 可自由更换NS厂家，如CloudFlare</p>
+</blockquote>
+<p>基于以上好处，我们可以使用这个链接来到他的官网：[namecheap官网](<a href="https://www.namecheap.com/">Buy a domain name - Register cheap domain names from $0.99 - Namecheap</a>)</p>
+<h2 id="来到了NameCheap要做什么？"><a href="#来到了NameCheap要做什么？" class="headerlink" title="来到了NameCheap要做什么？"></a>来到了NameCheap要做什么？</h2><p>首先这家域名商是支持邮箱注册的！qq邮箱也是可以的，本期就不过多赘述邮箱注册的步骤，直接上干货<br>进入官网 [namecheap官网](<a href="https://www.namecheap.com/">Buy a domain name - Register cheap domain names from $0.99 - Namecheap</a>)<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625406948-01.jpg" alt="官网"></p>
+<h3 id="进入官网后，根据文章操作"><a href="#进入官网后，根据文章操作" class="headerlink" title="进入官网后，根据文章操作"></a>进入官网后，根据文章操作</h3><p>在输入框输入你想要的名字，图片中的例子大家可以参考<br>输入完成后，点击 <strong>查询</strong> 即可<br>查询后，进入下图页面，如果你注册域名的后缀，显示有个购物车图标，那证明这个域名没有被人注册，你可以点击右边购物车，加入购物车进行购买。如果显示被人注册了，那你可以重复第一步，输入域名，再查询，直到你满意。<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407178-2.jpg"></p>
+<h3 id="加入购物车，下一步"><a href="#加入购物车，下一步" class="headerlink" title="加入购物车，下一步"></a>加入购物车，下一步</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407408-3.jpg"></p>
+<h3 id="确认购买信息"><a href="#确认购买信息" class="headerlink" title="确认购买信息"></a>确认购买信息</h3><p>如下图所示<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407654-4.jpg"></p>
+<h3 id="进入下一步，填写资料，之后下一步"><a href="#进入下一步，填写资料，之后下一步" class="headerlink" title="进入下一步，填写资料，之后下一步"></a>进入下一步，填写资料，之后下一步</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625408391-5.jpg"></p>
+<h3 id="下一步就是选择支付方式了"><a href="#下一步就是选择支付方式了" class="headerlink" title="下一步就是选择支付方式了"></a>下一步就是选择支付方式了</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409379-7.jpg"><br>我选择的是Paypal，可以进行绑卡操作，直接结算</p>
+<h3 id="之后会跳转到Paypal界面结算"><a href="#之后会跳转到Paypal界面结算" class="headerlink" title="之后会跳转到Paypal界面结算"></a>之后会跳转到Paypal界面结算</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409573-8.jpg"></p>
+<h3 id="支付后，等待出现成功界面，这个域名就已经买到手了"><a href="#支付后，等待出现成功界面，这个域名就已经买到手了" class="headerlink" title="支付后，等待出现成功界面，这个域名就已经买到手了"></a>支付后，等待出现成功界面，这个域名就已经买到手了</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409577-9.jpg"></p>
+<h2 id="完成购买后要做的"><a href="#完成购买后要做的" class="headerlink" title="完成购买后要做的"></a>完成购买后要做的</h2><h3 id="来到个人中心，会看到域名列表，你刚刚购买的会在这里看到"><a href="#来到个人中心，会看到域名列表，你刚刚购买的会在这里看到" class="headerlink" title="来到个人中心，会看到域名列表，你刚刚购买的会在这里看到"></a>来到个人中心，会看到域名列表，你刚刚购买的会在这里看到</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625410447-10.jpg"></p>
+<h3 id="到这里，你就完成了本期内容的一半"><a href="#到这里，你就完成了本期内容的一半" class="headerlink" title="到这里，你就完成了本期内容的一半"></a>到这里，你就完成了本期内容的一半</h3><p>接下来，会告诉你如何切换NS厂商，来实现进一步的域名管理<br>在此之前，要对本部分内容进行补充：</p>
+<ol>
+<li>首先是第一次使用这个网站的朋友们，可能没有或没有接触过PayPal这个东西，所以我在这里补充Paypal的官网链接，你可以自行去注册，地区要选择中国，建议有个人银行卡或者其他卡进行绑卡，再来网站支付购买</li>
+<li>Paypal官网：<a href="https://www.paypal.com/c2/webapps/mpp/account-selection">paypal官网</a></li>
+<li>NS厂商官网：<a href="https://www.cloudflare.com/">CkoudFlare官网</a></li>
+<li>接下来需要准备的东西</li>
+<li>可用的邮箱</li>
+<li>给你刚买好的域名更改NS记录</li>
+<li>进入NameCheap的管理页面后，即可看到默认的NS记录</li>
+<li>接下来继续我们的教程</li>
+</ol>
+<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#67;&#114;&#x61;&#122;&#x79;&#50;&#x34;&#x30;&#x33;&#x40;&#111;&#117;&#x74;&#x6c;&#x6f;&#x6f;&#107;&#46;&#x63;&#111;&#x6d;">&#67;&#114;&#x61;&#122;&#x79;&#50;&#x34;&#x30;&#x33;&#x40;&#111;&#117;&#x74;&#x6c;&#x6f;&#x6f;&#107;&#46;&#x63;&#111;&#x6d;</a></p>
+<h3 id="修改域名默认的NS记录"><a href="#修改域名默认的NS记录" class="headerlink" title="修改域名默认的NS记录"></a>修改域名默认的NS记录</h3><p>进入后台管理界面，你可以看到红圈部分就是默认NS的位置，这张图是修改好的，已经托管到了CF上面<br><img src="https://png1.xiaotaolive.cfd/ns%E8%AE%B0%E5%BD%95.png"></p>
+<ol>
+<li>既然你已经修改好了NS记录，那么过一段时间，CF检测通过了，这个域名就会在上一张图显示出来，我这里托管的域名是Xtxtudy.site</li>
+<li>如果你购买了域名，且修改了NS记录，还没有托管，接下来就可以开始你的工作了<ol>
+<li>首先，点击 <strong>添加站点</strong></li>
+<li>输入你购买的域名</li>
+<li>选择套餐，下拉选择 <strong>Free套餐</strong>，如果需要绑定支付方式，可选择 <strong>PayPal</strong>，绑定通过之后，继续下一步</li>
+<li>然后就自动开始检查你的域名了，如果NS和CF的不符，会出现提示，如下图(5)所示</li>
+<li><img src="https://png1.xiaotaolive.cfd/cf%E6%8F%90%E7%A4%BA%E7%95%8C%E9%9D%A2.png"></li>
+<li>修改NS记录时，将提示 <strong>我们为您分配的CF名称服务器</strong>分别复制到你域名管理页面的NS记录并修改，修改之后，可在这个页面点击检查</li>
+<li>检查通过后，会有CF的电子邮件发到你注册的邮箱，告知你 <strong>你的域名XXX已经可用</strong></li>
+<li>这时，你已经完成了，购买，修改NS记录，已经注册和托管到CF了</li>
+<li>快去夸一夸自己的学习力吧</li>
+</ol>
+</li>
+</ol>
+<h2 id="搭建节点所需的内容"><a href="#搭建节点所需的内容" class="headerlink" title="搭建节点所需的内容"></a>搭建节点所需的内容</h2><ol>
+<li>一个可用的托管好的域名 </li>
+<li>开启你的workers程序</li>
+<li>找到一个可以搭建节点的代码</li>
+<li>一个uuid生成网站</li>
+<li>编辑代码自定义域名，后面会讲到</li>
+</ol>
+<h4 id="创建workers"><a href="#创建workers" class="headerlink" title="创建workers"></a>创建workers</h4><ol>
+<li>在CF的主界面点击 <strong>Workers Pages</strong>，看到如下界面，点击 <strong>创建应用程序</strong></li>
+<li><img src="https://png1.xiaotaolive.cfd/%E7%95%8C%E9%9D%A2.png"></li>
+<li>然后来到这个界面，这时你要准备一些内容，就是第三步的代码<ol>
+<li>代码1：<a href="https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js">代码1</a></li>
+<li>代码2：<a href="https://github.com/Misaka-blog/cf-wkrs-pages-vless/blob/main/_worker.js">代码2</a></li>
+<li>UUID生成链接：<a href="https://www.uuidgenerator.net/">uuid在线生成</a></li>
+<li>一些说明：推荐使用Misaka的，他在原版基础上加了站点伪装和初始的proxyIP 需要修改两个地方 userID 和 proxyIP 。  userID可以理解为 为了隐藏我们的节点，也防止被人白嫖。 可以随便填写，也可以用在线工具生成</li>
+</ol>
+</li>
+<li>优选IP或者域名<ol>
+<li>这些仅供参考：</li>
+<li>cdn-all.xn–b6gac.eu.org</li>
+<li>cdn.xn–b6gac.eu.org</li>
+<li>cdn-b100.xn–b6gac.eu.org</li>
+<li>edgetunnel.anycast.eu.org</li>
+<li>cdn.anycast.eu.org</li>
+</ol>
+</li>
+</ol>
+<h2 id="创建和编辑，为上述的3-4-5步"><a href="#创建和编辑，为上述的3-4-5步" class="headerlink" title="创建和编辑，为上述的3&#x2F;4&#x2F;5步"></a>创建和编辑，为上述的3&#x2F;4&#x2F;5步</h2><p>这里演示以代码1做案例<br>代码1链接<a href="(https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js">代码1</a><br>如图所示：<br><img src="https://pngs.xiaotaolive.club/%E4%BB%A3%E7%A0%81%E7%95%8C%E9%9D%A2.png" alt="代码1的复制界面"><br>复制粘贴到workers的编辑界面<br><img src="https://png1.xiaotaolive.cfd/%E7%B2%98%E8%B4%B4%E4%B9%8B%E5%90%8E%E5%A6%82%E5%9B%BE.png"><br>点击刚刚的 <strong>uuid在线生成</strong>，获取一个uuid，粘贴到代码uuid的位置<br>也要点击刚刚的 <strong>优选域名</strong>，任选一个填入IP的引号内（非必须）<br>点击部署即可</p>
+<h3 id="重点：一定要记住你的uuid，否则无法获取订阅"><a href="#重点：一定要记住你的uuid，否则无法获取订阅" class="headerlink" title="重点：一定要记住你的uuid，否则无法获取订阅"></a>重点：一定要记住你的uuid，否则无法获取订阅</h3><h2 id="完成了部署之后"><a href="#完成了部署之后" class="headerlink" title="完成了部署之后"></a>完成了部署之后</h2><h3 id="点击Workees-Pages，回到页面"><a href="#点击Workees-Pages，回到页面" class="headerlink" title="点击Workees Pages，回到页面"></a>点击<strong>Workees Pages</strong>，回到页面</h3><p>找到刚刚创建的名字为Teach的workers，点击进入<br><img src="https://pngs.xiaotaolive.club/workes.png"></p>
+<h3 id="点击设置-触发器-自定义域"><a href="#点击设置-触发器-自定义域" class="headerlink" title="点击设置-触发器-自定义域"></a>点击设置-触发器-自定义域</h3><p><img src="https://png1.xiaotaolive.cfd/%E8%AE%BE%E7%BD%AE.png" alt="界面"></p>
+<h3 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h3><p>点击后，输入你托管的域名，可以是二级域名<br>如你买的域名为<strong>A.com</strong>，那么二级域名可以写为：<strong>B.A.com</strong><br>我测试的域名为xtxtudy.xite，那么二级域名为daliy.xtstudy.xtie</p>
+<h2 id="获取订阅链接"><a href="#获取订阅链接" class="headerlink" title="获取订阅链接"></a>获取订阅链接</h2><p>由于刚刚你写好了 <strong>uuid和自定义域</strong>，获取链接时在浏览器输入：<strong>你的自定义域名&#x2F;uuid</strong>即可访问页面<br>复制VLESS开头的即可<br>如我的自定义域名是daily.xtstudy.site，uuid是1234<br>链接就是daily.xtstudy.site&#x2F;1234<br>你的链接也是同理，操作时注意即可</p>
+<h2 id="本期内容仅供学习交流，不做任何其他引导"><a href="#本期内容仅供学习交流，不做任何其他引导" class="headerlink" title="本期内容仅供学习交流，不做任何其他引导"></a>本期内容仅供学习交流，不做任何其他引导</h2><h2 id="作者邮箱：Crazy2403outlook-com"><a href="#作者邮箱：Crazy2403outlook-com" class="headerlink" title="作者邮箱：Crazy2403outlook.com"></a>作者邮箱：Crazy2403outlook.com</h2>]]></content>
+      <tags>
+        <tag>CF 域名 技术 学习</tag>
+      </tags>
+  </entry>
+</search>
