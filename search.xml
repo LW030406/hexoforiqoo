@@ -30,7 +30,7 @@
 <li>进入NameCheap的管理页面后，即可看到默认的NS记录</li>
 <li>接下来继续我们的教程</li>
 </ol>
-<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#67;&#114;&#x61;&#122;&#x79;&#x32;&#52;&#48;&#x33;&#x40;&#x6f;&#x75;&#116;&#x6c;&#111;&#111;&#107;&#46;&#x63;&#x6f;&#x6d;">&#67;&#114;&#x61;&#122;&#x79;&#x32;&#52;&#48;&#x33;&#x40;&#x6f;&#x75;&#116;&#x6c;&#111;&#111;&#107;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#67;&#114;&#97;&#x7a;&#121;&#50;&#x34;&#48;&#51;&#64;&#x6f;&#117;&#116;&#x6c;&#x6f;&#111;&#x6b;&#46;&#x63;&#x6f;&#109;">&#67;&#114;&#97;&#x7a;&#121;&#50;&#x34;&#48;&#51;&#64;&#x6f;&#117;&#116;&#x6c;&#x6f;&#111;&#x6b;&#46;&#x63;&#x6f;&#109;</a></p>
 <h3 id="修改域名默认的NS记录"><a href="#修改域名默认的NS记录" class="headerlink" title="修改域名默认的NS记录"></a>修改域名默认的NS记录</h3><p>进入后台管理界面，你可以看到红圈部分就是默认NS的位置，这张图是修改好的，已经托管到了CF上面<br><img src="https://png1.xiaotaolive.cfd/ns%E8%AE%B0%E5%BD%95.png"></p>
 <ol>
 <li>既然你已经修改好了NS记录，那么过一段时间，CF检测通过了，这个域名就会在上一张图显示出来，我这里托管的域名是Xtxtudy.site</li>
@@ -80,6 +80,9 @@
 <h3 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h3><p>点击后，输入你托管的域名，可以是二级域名<br>如你买的域名为<strong>A.com</strong>，那么二级域名可以写为：<strong>B.A.com</strong><br>我测试的域名为xtxtudy.xite，那么二级域名为daliy.xtstudy.xtie</p>
 <h2 id="获取订阅链接"><a href="#获取订阅链接" class="headerlink" title="获取订阅链接"></a>获取订阅链接</h2><p>由于刚刚你写好了 <strong>uuid和自定义域</strong>，获取链接时在浏览器输入：<strong>你的自定义域名&#x2F;uuid</strong>即可访问页面<br>复制VLESS开头的即可<br>如我的自定义域名是daily.xtstudy.site，uuid是1234<br>链接就是daily.xtstudy.site&#x2F;1234<br>你的链接也是同理，操作时注意即可</p>
 <h2 id="本期内容仅供学习交流，不做任何其他引导"><a href="#本期内容仅供学习交流，不做任何其他引导" class="headerlink" title="本期内容仅供学习交流，不做任何其他引导"></a>本期内容仅供学习交流，不做任何其他引导</h2><h2 id="作者邮箱：Crazy2403outlook-com"><a href="#作者邮箱：Crazy2403outlook-com" class="headerlink" title="作者邮箱：Crazy2403outlook.com"></a>作者邮箱：Crazy2403outlook.com</h2>]]></content>
+      <tags>
+        <tag>CF 域名 技术 学习</tag>
+      </tags>
   </entry>
   <entry>
     <title>个人知识库：hexo博客</title>
