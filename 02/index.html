@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    搭建个人网站,属于自己的知识库 |
+    
+    博客，记录生活
+  </title>
+  <!-- Icon -->
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-1" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+  
+  <h1 class="article-title" itemprop="name">
+    搭建个人网站,属于自己的知识库
+  </h1>
+  
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/02/" class="article-date">
+  <time datetime="2024-06-02T02:48:47.000Z" itemprop="datePublished">2024-06-02</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+  
+    
+    
+      <h1 id="一个超实用的个人网站"><a href="#一个超实用的个人网站" class="headerlink" title="一个超实用的个人网站"></a>一个超实用的个人网站</h1><blockquote>
+<p>hexo是什么？</p>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a target="_blank" rel="noopener" href="http://daringfireball.net/projects/markdown/">Markdown</a>（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<h2 id="我需要准备什么？"><a href="#我需要准备什么？" class="headerlink" title="我需要准备什么？"></a>我需要准备什么？</h2><ol>
+<li>首先是他必备的运行环境，NodeJS和Git，下面会准备链接<ol>
+<li>GIt：<a target="_blank" rel="noopener" href="https://pan.xiaotaolive.cfd/d/Web_onedrive/hexo%E6%96%87%E4%BB%B6/Git-2.45.1-64-bit.exe?sign=7_cjKWQnRxsPfm_byWdE9fdPC0xO8fP2GdnSX-9c06k=:0">GIT 下载链接</a></li>
+<li>NodeJS：<a target="_blank" rel="noopener" href="https://pan.xiaotaolive.cfd/d/Web_onedrive/hexo%E6%96%87%E4%BB%B6/node-v20.13.1-x64.msi?sign=keCrywP_47qGsdNmlp_WvSRDzqLLeRSuifJVROXnwgI=:0">Nodejs安装包</a></li>
+</ol>
+</li>
+</ol>
+<h2 id="安装组件"><a href="#安装组件" class="headerlink" title="安装组件"></a>安装组件</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>直接点击安装即可，安装完成后打开<strong>cmd</strong></p>
+<p>按住<strong>win+R</strong>，输入<strong>cmd</strong>即可打开命令行窗口</p>
+<p>输入下列代码，查看版本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<p>​	</p>
+<p>安装完成会显示版本号，则说明安装成功</p>
+<h3 id="安装NodeJS"><a href="#安装NodeJS" class="headerlink" title="安装NodeJS"></a>安装NodeJS</h3><p>点击下载链接，打开安装即可，和上一步一样</p>
+<p>按住<strong>win+R</strong>，输入<strong>cmd</strong>即可打开命令行窗口</p>
+<p>输入下列代码，查看版本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node --version</span><br></pre></td></tr></table></figure>
+
+<p>安装完成会显示版本号，如我的版本为V20.13.1</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>组件安装完成后，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<p>即可开始安装hexo</p>
+<h3 id="创建一个hexo目录"><a href="#创建一个hexo目录" class="headerlink" title="创建一个hexo目录"></a>创建一个hexo目录</h3><p>安装好后，在你空域磁盘的目录下创建一个新的文件夹，如<strong>blog</strong></p>
+<p>然后双击进入文件夹</p>
+<p>在显示目录的位置单击，输入<strong>cmd</strong>即可唤醒命令窗口</p>
+<h3 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h3><p>打开cmd窗口之后，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>即可开始hexo 的初始化，等待初始化完成，你就可以看到目录了</p>
+<h3 id="预览hexo的模样"><a href="#预览hexo的模样" class="headerlink" title="预览hexo的模样"></a>预览hexo的模样</h3><p>初识的hexo默认有一篇教你起步的<strong>HelloWorld</strong>文章，会告诉你三个命令</p>
+<p>分别是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean 用于清理缓存</span><br><span class="line">hexo g 生成静态页面</span><br><span class="line">hexo d 部署你写作的内容</span><br></pre></td></tr></table></figure>
+
+<p>这三个指令作为常用的指令，是接触hexo必须要记住的</p>
+<h2 id="安装一个好看的主题"><a href="#安装一个好看的主题" class="headerlink" title="安装一个好看的主题"></a>安装一个好看的主题</h2><p>hexo博客带有主题系统，可以通过</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 附带链接把主题拷贝到本地</span><br></pre></td></tr></table></figure>
+
+<p>主题存放在hexo目录的themes下</p>
+<p>在你的cmd窗口输入<strong>cd themes</strong> 即可进入这个目录</p>
+<p>以<strong>Next</strong>主题为例，在命令行输入以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next next</span><br></pre></td></tr></table></figure>
+
+<p>即可下载出一个**&#x2F;themes&#x2F;next**了</p>
+<p>打开文件夹，再进入<strong>themes下的themes</strong>，即<strong>blog&#x2F;themes&#x2F;themes</strong>，那么存储<strong>Next主题的路径就是：blog&#x2F;themes&#x2F;themes&#x2F;Next</strong></p>
+<p>进入目录选择<strong>next文件夹</strong>，**右键复制，粘贴到，blog&#x2F;themes&#x2F;**即可</p>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p><strong>blog根目录下记录了hexo的全局配置</strong></p>
+<p>下列代码区就是文件的大概内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## Docs: https://hexo.io/docs/configuration.html</span><br><span class="line">## Source: https://github.com/hexojs/hexo/</span><br><span class="line"></span><br><span class="line"># Site</span><br><span class="line">title: 站点标题</span><br><span class="line">subtitle: &#x27;&#x27; 副标题</span><br><span class="line">description: &#x27;&#x27; 网站描述</span><br><span class="line">keywords: 网站的关键词。支持多个关键词。</span><br><span class="line">author: 您的名字</span><br><span class="line">language: 网站语言，中文设置zh_CN即可</span><br><span class="line">timezone: &#x27;&#x27; 时区，核对时间，设置为Asia/Shanghai 即可</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: 网址, 必须以 http:// 或 https:// 开头</span><br><span class="line">root: 网站根目录</span><br><span class="line">permalink: 文章的 永久链接 格式</span><br><span class="line">permalink_defaults: 永久链接中各部分的默认值</span><br><span class="line">pretty_urls: 改写 permalink 的值来美化 URL</span><br><span class="line">  trailing_index: true # 是否在永久链接中保留尾部的 index.html，设置为 false 时去除</span><br><span class="line">  trailing &#x27;index.html&#x27; 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</span><br><span class="line">  trailing_html: true # Set to false to remove trailing &#x27;.html&#x27; from permalinks</span><br><span class="line"></span><br><span class="line"># Directory</span><br><span class="line">source_dir: 资源文件夹，存放内容。默认值source</span><br><span class="line">public_dir: 公共文件夹，于存放生成的站点文件。默认值public</span><br><span class="line">tag_dir: 标签文件夹，默认值tags</span><br><span class="line">archive_dir: 归档文件夹，默认值archives</span><br><span class="line">category_dir: 分类文件夹，默认值categories</span><br><span class="line">code_dir: Include code文件夹，source_dir下的子目录，默认值downloads/code</span><br><span class="line">i18n_dir: 国际化（i18n）文件夹，默认 :lang</span><br><span class="line">skip_render: 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。默认留空</span><br><span class="line"></span><br><span class="line"># Writing 这部分没有特殊需求保持不变即可</span><br><span class="line">new_post_name: :title.md # File name of new posts</span><br><span class="line">default_layout: post</span><br><span class="line">titlecase: false # Transform title into titlecase</span><br><span class="line">external_link:</span><br><span class="line">  enable: true # Open external links in new tab</span><br><span class="line">  field: site # Apply to the whole site</span><br><span class="line">  exclude: &#x27;&#x27;</span><br><span class="line">filename_case: 0</span><br><span class="line">render_drafts: false</span><br><span class="line">post_asset_folder: false 启用资源文件夹，用来存放本地的图片，开启改为 true</span><br><span class="line">relative_link: false</span><br><span class="line">future: true</span><br><span class="line">syntax_highlighter: highlight.js</span><br><span class="line">highlight:</span><br><span class="line">  line_number: true</span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">  wrap: true</span><br><span class="line">  hljs: false</span><br><span class="line">prismjs:</span><br><span class="line">  preprocess: true</span><br><span class="line">  line_number: true</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">  	</span><br><span class="line"></span><br><span class="line"># Home page setting</span><br><span class="line"># path: Root path for your blogs index page. (default = &#x27;&#x27;)</span><br><span class="line"># per_page: Posts displayed per page. (0 = disable pagination)</span><br><span class="line"># order_by: Posts order. (Order by date descending by default)</span><br><span class="line">index_generator:</span><br><span class="line">  path: &#x27;&#x27;</span><br><span class="line">  per_page: 10</span><br><span class="line">  order_by: -date</span><br><span class="line"></span><br><span class="line"># Category &amp; Tag</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">tag_map:</span><br><span class="line"></span><br><span class="line"># Metadata elements</span><br><span class="line">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span><br><span class="line">meta_generator: true</span><br><span class="line"></span><br><span class="line"># Date / Time format</span><br><span class="line">## Hexo uses Moment.js to parse and display date</span><br><span class="line">## You can customize the date format as defined in</span><br><span class="line">## http://momentjs.com/docs/#/displaying/format/</span><br><span class="line">date_format: YYYY-MM-DD  日期格式</span><br><span class="line">time_format: HH:mm:ss  时间格式</span><br><span class="line">## updated_option supports &#x27;mtime&#x27;, &#x27;date&#x27;, &#x27;empty&#x27;</span><br><span class="line">updated_option: &#x27;mtime&#x27;  当 Front Matter 中没有指定 updated 时 updated 的取值</span><br><span class="line"></span><br><span class="line"># Pagination</span><br><span class="line">## Set per_page to 0 to disable pagination</span><br><span class="line">per_page: 10  每页显示的文章量 (0 = 关闭分页功能)</span><br><span class="line">pagination_dir: page  分页目录</span><br><span class="line"></span><br><span class="line"># Include / Exclude file(s) 没有需要不写</span><br><span class="line">## include:/exclude: options only apply to the &#x27;source/&#x27; folder</span><br><span class="line">include: Hexo 默认会不包括 source/ 下的文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下</span><br><span class="line">exclude: Hexo 不包括 source/ 下的这些文件和目录</span><br><span class="line">ignore: Hexo 会忽略整个 Hexo 项目下的这些文件夹或文件</span><br><span class="line"></span><br><span class="line"># Extensions 主题配置，在theme后输入主题名字即可</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: particlex</span><br><span class="line"></span><br><span class="line"># Deployment 部署部分的设置，如部署到GitHub或者gitee，gitlab</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: 类型，写git</span><br><span class="line">  repo: github的仓库地址，需要提前配置ssh</span><br><span class="line">  branch: 部署分支，main或master都可以</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo中加入本地图片的实现"><a href="#hexo中加入本地图片的实现" class="headerlink" title="hexo中加入本地图片的实现"></a>hexo中加入本地图片的实现</h2><ol>
+<li><p>首先需要打开配置文件<strong>config.yml</strong>。找到<strong>post_asset_folder: false</strong>设置项，把<strong>flase改为true</strong>，保存文件</p>
+</li>
+<li><p>安装扩展，找到你的cmd窗口，hexo-asset-image</p>
+<ol>
+<li><p>方法为在博客根目录下运行cmd，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/xcodebuild/hexo-asset-image.git --save</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+<p>完成上述配置后，每次创建新的文章，都会生成一个资源文件夹，里面即可存放你的图片，如截图，壁纸，文件内容，学习资料等</p>
+<ol>
+<li><p>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n 文件名  创建新的文件，也会生成同名的文件夹，可以存放资源进去</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>本地图片的引用方法</p>
+<ol>
+<li><p>使用Typora，点击<strong>格式</strong>，<strong>图像</strong>，<strong>插入本地图像</strong>，选择刚刚对应文件夹的目录即可</p>
+</li>
+<li><p>引用语法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 引用图片的时候一定要带上目录名称作为路径</span><br><span class="line">![本地图片](测试文章/本地图片.jpg)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>补充说明</p>
+</li>
+<li><blockquote>
+<p>显然，在hexo中引入图片的方式稍微有点繁琐，即：必须在<code>_post</code>目录下新建一个与文章同名的目录，然后将需要引用的图片文件都放在该目录中。 还好使用插件<code>hexo-asset-image</code>能够帮助我们自动创建图片目录（每次都会自动创建，如果在文章中不需要引用图片资源，可以手动将该目录删除）。</p>
+<p>那么，为什么需要将文章引用的图片放置在与文章同名的目录呢？ 原因是：在执行<code>hexo g</code>命令的时候会将文章转换为一个<code>index.html</code>文件，该文件路径为<code>public/年/月/日/文章名称/index.html</code>，同时也会将文章中引用的图片文件拷贝到与<code>index.html</code>文件相同的目录中。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><h3 id="首先，要知道入口在哪里"><a href="#首先，要知道入口在哪里" class="headerlink" title="首先，要知道入口在哪里"></a>首先，要知道入口在哪里</h3><p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/">注册入口</a></p>
+<h3 id="其次，你要准备这些"><a href="#其次，你要准备这些" class="headerlink" title="其次，你要准备这些"></a>其次，你要准备这些</h3><ol>
+<li>可用的邮箱</li>
+<li>注册后创建一个仓库</li>
+<li>本地的ssh密钥，用于免登录调用GitHub的仓库</li>
+</ol>
+<p>注册</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/507d433d1131e28e28971954b45072e9.png" alt="img"></p>
+<p>创建仓库，补充说明以下内容</p>
+<ol>
+<li>仓库名字设置为，用户名.GitHub.io</li>
+<li>如你的用户名是lulu，那么就是lulu.GitHub.io</li>
+<li>根据GitHub的规则，当部署到GitHubpages服务后，按照刚刚命名的仓库才会被识别</li>
+</ol>
+<p>根据规则，这样写</p>
+<p><img src="https://developer.qcloudimg.com/http-save/yehe-10581965/64a3b7752c3c3c6020606d39fe1bf3f9.png"></p>
+<h3 id="本地的ssh密钥"><a href="#本地的ssh密钥" class="headerlink" title="本地的ssh密钥"></a>本地的ssh密钥</h3><p>按住<strong>win+R</strong>，输入以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;muzihuaner&quot;</span><br><span class="line">git config --global user.email &quot;xxxxxx@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>第一项为你的GitHub用户名，第二项为注册邮箱</p>
+</li>
+<li><p>分别配置好以后，可以执行检查指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>确认无误，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br><span class="line">email就是你注册GitHub的邮箱</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成的文件会存储到如下目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\useers\用户名\.ssh 下</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如图所示位置<img src="https://developer.qcloudimg.com/http-save/yehe-10581965/226396db3e5a8db9b1358fb7d7151d3a.png"></p>
+</li>
+<li><p>将文件中的密钥写进去</p>
+</li>
+<li><p><img src="https://developer.qcloudimg.com/http-save/yehe-10581965/0944345dd0a726635ede14630e81ebcf.png"></p>
+</li>
+<li><p>确定文件目录后，根据下面的说明</p>
+<blockquote>
+<p><code>id_rsa</code>是你这台电脑的私人秘钥，<code>id_rsa.pub</code>是公共秘钥。把公钥放在GitHub上，当你连接自己的Github账号时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过Git上传你的文件到GitHub上。</p>
+</blockquote>
+</li>
+<li><p>找到<code>*SSH and GPG keys*</code>，新建SSH Key</p>
+</li>
+<li><p>以文本方式打开<code>id_rsa.pub</code>文件，将内容复制到Key，标题随便起，添加Key。</p>
+</li>
+</ol>
+<h2 id="配置config文件的部署"><a href="#配置config文件的部署" class="headerlink" title="配置config文件的部署"></a>配置config文件的部署</h2><p>打开**&#x2F;blog下的condig.yml**,找到<strong>deploy</strong>的内容,根据代码块的内容改写你的文档</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@githb.com:muzihuaner/muzihuaner.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装上传扩展"><a href="#安装上传扩展" class="headerlink" title="安装上传扩展"></a>安装上传扩展</h3><p>这个扩展是方便你对写作好的内容部署到你规定的仓库的,代码如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>上传依次输入这些指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean 清理缓存</span><br><span class="line">hexo g 生成网页</span><br><span class="line">hexo d 部署到仓库(上传)</span><br><span class="line">hexo s 本地预览你的网页</span><br></pre></td></tr></table></figure>
+
+<p>确认无误即可上传部署了</p>
+<h2 id="开启pages服务"><a href="#开启pages服务" class="headerlink" title="开启pages服务"></a>开启pages服务</h2><h3 id="GitHub-pages"><a href="#GitHub-pages" class="headerlink" title="GitHub pages"></a>GitHub pages</h3><p>打开你的GitHub仓库,点击<strong>settings</strong>,在左侧栏找到<strong>pages</strong>选项</p>
+<p>按照下图的内容修改即可</p>
+<p><img src="D:\hexo\liblog\source_posts\1\pages.png" alt="案例"></p>
+<p>修改完后,即可用<strong>用户名.GitHub.io</strong>进行访问了,案例网站如下</p>
+<p><a href="lw030406.GitHub.io">案例网站</a></p>
+
+    
+  
+</div>
+    <footer class="article-footer">
+      <a data-url="https://lw030406.github.io/r9000p.io/02/" data-id="clwxaf9jv00007gth85jmd96u" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  
+  <a href="/30/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">域名和CF搭配的妙用：拥有自己的免费节点</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+<div class="vcomments" id="vcomments"></div>
+
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'YzQhCBgk9xnGpzSYBT8rtJuk-gzGzoHsz',
+    appKey: 'aVL571SzqsIQqq61UnDMOOj3',
+    notify: 'false',
+    verify: 'true',
+    avatar: 'mp',
+    pageSize: '10',
+    placeholder: '请输入...'
+  })
+</script>
+
+  
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>博客，记录生活 &copy; 2024</li>
+      
+        <li>
+          
+            <a href="https://beian.miit.gov.cn/" target="_blank"></a>
+            
+        </li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+    <p><ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt tooltip" data-tooltip="UV"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark tooltip" data-tooltip="PV"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul></p>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="博客，记录生活"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">友情链接</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+</body>
+
+</html>
