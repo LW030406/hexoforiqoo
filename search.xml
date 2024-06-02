@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>搭建个人网站,属于自己的知识库</title>
+    <title>个人知识库：hexo博客</title>
     <url>/02/</url>
     <content><![CDATA[<h1 id="一个超实用的个人网站"><a href="#一个超实用的个人网站" class="headerlink" title="一个超实用的个人网站"></a>一个超实用的个人网站</h1><blockquote>
 <p>hexo是什么？</p>
@@ -91,14 +91,13 @@
 </ol>
 </li>
 </ul>
-<h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><h3 id="首先，要知道入口在哪里"><a href="#首先，要知道入口在哪里" class="headerlink" title="首先，要知道入口在哪里"></a>首先，要知道入口在哪里</h3><p>GitHub：<a href="https://github.com/">注册入口</a></p>
+<h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><h3 id="首先，要知道入口在哪里"><a href="#首先，要知道入口在哪里" class="headerlink" title="首先，要知道入口在哪里"></a>首先，要知道入口在哪里</h3><p>GitHub：[注册入口](<a href="https://github.com/signup?user_email=&source=form-home-signup">Join GitHub · GitHub</a>)</p>
 <h3 id="其次，你要准备这些"><a href="#其次，你要准备这些" class="headerlink" title="其次，你要准备这些"></a>其次，你要准备这些</h3><ol>
 <li>可用的邮箱</li>
 <li>注册后创建一个仓库</li>
 <li>本地的ssh密钥，用于免登录调用GitHub的仓库</li>
 </ol>
-<p>注册</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/507d433d1131e28e28971954b45072e9.png" alt="img"></p>
+<p>注册,输入用户名（英文数字组合），绑定邮箱，即可注册</p>
 <p>创建仓库，补充说明以下内容</p>
 <ol>
 <li>仓库名字设置为，用户名.GitHub.io</li>
@@ -106,7 +105,7 @@
 <li>根据GitHub的规则，当部署到GitHubpages服务后，按照刚刚命名的仓库才会被识别</li>
 </ol>
 <p>根据规则，这样写</p>
-<p><img src="https://developer.qcloudimg.com/http-save/yehe-10581965/64a3b7752c3c3c6020606d39fe1bf3f9.png"></p>
+<p><img src="https://pngs.xiaotaolive.club/%E4%BB%93%E5%BA%93.png"></p>
 <h3 id="本地的ssh密钥"><a href="#本地的ssh密钥" class="headerlink" title="本地的ssh密钥"></a>本地的ssh密钥</h3><p>按住<strong>win+R</strong>，输入以下内容</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;muzihuaner&quot;</span><br><span class="line">git config --global user.email &quot;xxxxxx@qq.com&quot;</span><br></pre></td></tr></table></figure>
 
@@ -122,11 +121,11 @@
 <li><p>生成的文件会存储到如下目录</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">c:\useers\用户名\.ssh 下</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>如图所示位置<img src="https://developer.qcloudimg.com/http-save/yehe-10581965/226396db3e5a8db9b1358fb7d7151d3a.png"></p>
+<li><p>如图所示位置<img src="https://pngs.xiaotaolive.club/sshkey.png"></p>
 </li>
 <li><p>将文件中的密钥写进去</p>
 </li>
-<li><p><img src="https://developer.qcloudimg.com/http-save/yehe-10581965/0944345dd0a726635ede14630e81ebcf.png"></p>
+<li><p><img src="https://png1.xiaotaolive.cfd/shkey0.png"></p>
 </li>
 <li><p>确定文件目录后，根据下面的说明</p>
 <blockquote>
@@ -149,11 +148,13 @@
 
 <p>确认无误即可上传部署了</p>
 <h2 id="开启pages服务"><a href="#开启pages服务" class="headerlink" title="开启pages服务"></a>开启pages服务</h2><h3 id="GitHub-pages"><a href="#GitHub-pages" class="headerlink" title="GitHub pages"></a>GitHub pages</h3><p>打开你的GitHub仓库,点击<strong>settings</strong>,在左侧栏找到<strong>pages</strong>选项</p>
-<p>按照下图的内容修改即可</p>
-<p><img src="D:\hexo\liblog\source_posts\1\pages.png" alt="案例"></p>
+<p><img src="https://pngs.xiaotaolive.club/pages.png"></p>
 <p>修改完后,即可用<strong>用户名.GitHub.io</strong>进行访问了,案例网站如下</p>
 <p><a href="lw030406.GitHub.io">案例网站</a></p>
 ]]></content>
+      <tags>
+        <tag>CF 域名 技术 学习</tag>
+      </tags>
   </entry>
   <entry>
     <title>域名和CF搭配的妙用：拥有自己的免费节点</title>
@@ -185,7 +186,7 @@
 <li>进入NameCheap的管理页面后，即可看到默认的NS记录</li>
 <li>接下来继续我们的教程</li>
 </ol>
-<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#67;&#x72;&#97;&#x7a;&#x79;&#x32;&#52;&#x30;&#x33;&#64;&#111;&#x75;&#116;&#108;&#x6f;&#111;&#107;&#x2e;&#99;&#x6f;&#109;">&#67;&#x72;&#97;&#x7a;&#x79;&#x32;&#52;&#x30;&#x33;&#64;&#111;&#x75;&#116;&#108;&#x6f;&#111;&#107;&#x2e;&#99;&#x6f;&#109;</a></p>
+<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#x43;&#114;&#97;&#x7a;&#121;&#x32;&#52;&#x30;&#x33;&#x40;&#x6f;&#x75;&#x74;&#x6c;&#111;&#x6f;&#107;&#46;&#x63;&#111;&#x6d;">&#x43;&#114;&#97;&#x7a;&#121;&#x32;&#52;&#x30;&#x33;&#x40;&#x6f;&#x75;&#x74;&#x6c;&#111;&#x6f;&#107;&#46;&#x63;&#111;&#x6d;</a></p>
 <h3 id="修改域名默认的NS记录"><a href="#修改域名默认的NS记录" class="headerlink" title="修改域名默认的NS记录"></a>修改域名默认的NS记录</h3><p>进入后台管理界面，你可以看到红圈部分就是默认NS的位置，这张图是修改好的，已经托管到了CF上面<br><img src="https://png1.xiaotaolive.cfd/ns%E8%AE%B0%E5%BD%95.png"></p>
 <ol>
 <li>既然你已经修改好了NS记录，那么过一段时间，CF检测通过了，这个域名就会在上一张图显示出来，我这里托管的域名是Xtxtudy.site</li>
