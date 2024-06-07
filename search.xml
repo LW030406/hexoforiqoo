@@ -32,7 +32,7 @@
 <li>进入NameCheap的管理页面后，即可看到默认的NS记录</li>
 <li>接下来继续我们的教程</li>
 </ol>
-<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#67;&#x72;&#97;&#122;&#x79;&#x32;&#52;&#48;&#51;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#x2e;&#99;&#111;&#x6d;">&#67;&#x72;&#97;&#122;&#x79;&#x32;&#52;&#48;&#51;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#x2e;&#99;&#111;&#x6d;</a></p>
+<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#67;&#x72;&#97;&#122;&#121;&#50;&#x34;&#48;&#51;&#x40;&#x6f;&#117;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#x6f;&#109;">&#67;&#x72;&#97;&#122;&#121;&#50;&#x34;&#48;&#51;&#x40;&#x6f;&#117;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <h3 id="修改域名默认的NS记录"><a href="#修改域名默认的NS记录" class="headerlink" title="修改域名默认的NS记录"></a>修改域名默认的NS记录</h3><p>进入后台管理界面，你可以看到红圈部分就是默认NS的位置，这张图是修改好的，已经托管到了CF上面<br><img src="https://png1.xiaotaolive.cfd/ns%E8%AE%B0%E5%BD%95.png"></p>
 <ol>
 <li>既然你已经修改好了NS记录，那么过一段时间，CF检测通过了，这个域名就会在上一张图显示出来，我这里托管的域名是Xtxtudy.site</li>
@@ -84,6 +84,80 @@
 <h2 id="本期内容仅供学习交流，不做任何其他引导"><a href="#本期内容仅供学习交流，不做任何其他引导" class="headerlink" title="本期内容仅供学习交流，不做任何其他引导"></a>本期内容仅供学习交流，不做任何其他引导</h2><h2 id="作者邮箱：Crazy2403outlook-com"><a href="#作者邮箱：Crazy2403outlook-com" class="headerlink" title="作者邮箱：Crazy2403outlook.com"></a>作者邮箱：Crazy2403outlook.com</h2>]]></content>
       <tags>
         <tag>CF 域名 技术 学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一篇教程：ChatGPT</title>
+    <url>/13/</url>
+    <content><![CDATA[<h1 id="什么？我没有GPT也没有魔法？"><a href="#什么？我没有GPT也没有魔法？" class="headerlink" title="什么？我没有GPT也没有魔法？"></a>什么？我没有GPT也没有魔法？</h1><h2 id="1：我该怎么办？"><a href="#1：我该怎么办？" class="headerlink" title="1：我该怎么办？"></a>1：我该怎么办？</h2><p>还没有GPT吗？今天我们就来介绍一下怎么注册，需要的准备事项，以及你需要如何操作</p>
+<p>首先，<strong>一个值得信任的机场</strong>是必须有的，<strong>也决定了你是否可以进到注册页面！</strong></p>
+<p>所以，根据上面的说法，<strong>作者也为大家准备了一家不错的机场供大家选择</strong></p>
+<span id="more"></span>
+<p><strong>第一位：三分</strong>：<br>推荐的主要原因就是便宜了！年付套餐才10块钱，这么便宜，还要什么自行车呢？<br><strong>优势：</strong> 便宜，且量大，速度有保障<br><strong>不足</strong>：个别时间地点存在不可用的现象，原因众所周知<br><img src="https://png1.xiaotaolive.cfd/Screenshot_20240413_172649.jpg" alt="三分机场购买页面"><br>如果心动，请抓紧哦！<strong>点击带有邀请码的链接享受优惠</strong><a href="https://shop.sanfen.co/#/register?code=YoRhN4la">三分购买链接</a></p>
+<p>上一位在你预算有限且需要GPT等软件时考虑</p>
+<p>接下来介绍第二位：<strong>Gatern</strong><br><strong>推荐原因：</strong> 低延迟，随时随地拿手即用，稳定使用GPT,节点众多，覆盖面大<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_173749.jpg" alt="Gatern购买界面"><br>作者个人推荐这个机场，因为他除了众所周知的用途之外，也可以直接用于台服等外服游戏的直连，延迟均在理想范围，这一点作者已经测试<br>考虑这一家的小伙伴可以点击下方链接去看看详细情况：<br><strong>购买链接（点击即可）</strong>：<a href="https://shuttle.gt-all.com/aff.php?aff=8837">Gatern机场</a></p>
+<p>第三家：<strong>深蓝云</strong><br>这也是作者多次续订的一家，具备Chatgpt的专线，便宜且好用，也有家宽专用节点<br><strong>优势</strong>：便宜，月付，支持GPT，自带优惠码<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_174747.jpg" alt="自带优惠的深蓝云"><br><strong>优惠码：shenlan，输入自带八折优惠</strong><br><strong>链接</strong>：<a href="https://www.slplus.one/#/register?code=nRTPHmco">深蓝云传送门</a></p>
+<h2 id="2：我准备好了！接下来。。。"><a href="#2：我准备好了！接下来。。。" class="headerlink" title="2：我准备好了！接下来。。。"></a>2：我准备好了！接下来。。。</h2><p><strong>如果你都准备好了，那么就开始注册的环节了</strong><br>安卓手机需要<strong>Nekobox</strong>，或者<strong>V2rayng</strong>等工具<br>苹果请准备<strong>shadowrocket</strong> 软件，以获取订阅和开展下一步</p>
+<h2 id="3：我拿到了订阅，接下来？"><a href="#3：我拿到了订阅，接下来？" class="headerlink" title="3：我拿到了订阅，接下来？"></a>3：我拿到了订阅，接下来？</h2><p><strong>开始前必看</strong>：确认<strong>获取了订阅</strong>之后，接下来要在<strong>全局模式</strong>下打开一个<strong>开启无痕模式</strong>的浏览器<br>做好</p>
+<p>接下来，打开<strong>浏览器</strong>，进入<strong>注册环节</strong><br>点击传送门进入openai的注册<br><strong>传送门</strong>：<a href="https://auth0.openai.com/u/signup/identifier?state=hKFo2SBaVTZ2eGJsS2NYOUhFeTh2ZU1IeHpjZFB6bFFFWk9ZOKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGxCZE5pN0toQkszNHNOWGJfVXNaUWdGRk1ydWwwdnlEo2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc">openai注册页面</a></p>
+<p>到了这一步，如果你看到了注册页面，就说明已经成功了一半</p>
+<p>这是你需要在以下几个网站获取一个邮箱，如<strong>outlook</strong>，<strong>Gmail</strong>等等，教学会用<strong>outlook</strong>进行</p>
+<p><a href="https://signup.live.com/signup?lcid=1033&wa=wsignin1.0&rpsnv=23&ct=1713002920&rver=7.0.6738.0&wp=MBI_SSL&wreply=https://outlook.live.com/owa/?nlp=1&signup=1&RpsCsrfState=1158db03-92dd-97c2-7404-bef9b1fca2ce&id=292841&CBCXT=out&lw=1&fl=dob,flname,wld&cobrandid=90015&lic=1&uaid=f6db1c6fc55a40108fc793fe415740ed">outlook注册链接</a><br>注册时选择<strong>outlook.com</strong>的后缀即可，注册好之后，就拿到了一个可以用的链接</p>
+<p>拿到了outlook邮箱，回到这里填写<br><img src="https://png1.xiaotaolive.cfd/Screenshot_20240413_181124.jpg" alt="注册页面"><br>接下来你会收到<strong>openai</strong>的验证码，在邮箱可以找到<br>如下图所示，<strong>长按验证按钮复制链接</strong>，然后去<strong>浏览器粘贴</strong>，即可进入信息填写页面，填写名字即可<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_181402.jpg" alt="example"><br>信息写完之后，你就发现，你来到了网页版Chatgpt的聊天界面，接下来你就可以自由使用了！<br>如下图所示：<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_181806.jpg" alt="注册成功截图"></p>
+<h2 id="4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧"><a href="#4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧" class="headerlink" title="4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧"></a>4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧</h2><h3 id="写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他"><a href="#写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他" class="headerlink" title="写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他"></a>写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他</h3><p><strong>作者邮箱</strong>： <a href="mailto:&#99;&#x72;&#97;&#x7a;&#x79;&#x32;&#x34;&#48;&#x33;&#64;&#111;&#x75;&#116;&#108;&#111;&#x6f;&#107;&#46;&#99;&#111;&#x6d;">&#99;&#x72;&#97;&#x7a;&#x79;&#x32;&#x34;&#48;&#x33;&#64;&#111;&#x75;&#116;&#108;&#111;&#x6f;&#107;&#46;&#99;&#111;&#x6d;</a><br><strong>投稿须知</strong>：本站仅用于分享，请注意保护你的隐私，投稿次之，安全为上，谨防电诈</p>
+]]></content>
+      <tags>
+        <tag>技术 生活 ChatGPT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不需要會員也可以追劇</title>
+    <url>/09/</url>
+    <content><![CDATA[<h2 id="本期内容：Addons软件"><a href="#本期内容：Addons软件" class="headerlink" title="本期内容：Addons软件"></a>本期内容：Addons软件</h2><h3 id="问：这是一个什么软件"><a href="#问：这是一个什么软件" class="headerlink" title="问：这是一个什么软件"></a>问：这是一个什么软件</h3><pre><code>答：他是一个很方便的浏览器扩展工具
+有两个很好用的基础功能：脚本和资源嗅探
+</code></pre>
+<h3 id="问：我该准备什么？"><a href="#问：我该准备什么？" class="headerlink" title="问：我该准备什么？"></a>问：我该准备什么？</h3><pre><code>答：一个苹果id即可
+</code></pre>
+<h3 id="问：该怎么使用？"><a href="#问：该怎么使用？" class="headerlink" title="问：该怎么使用？"></a>问：该怎么使用？</h3><pre><code>答：看教学即可
+</code></pre>
+<span id="more"></span>
+<p><strong>说明</strong>：外区id如何获取我会另作一期内容</p>
+<p><strong>接下来我们正式开始</strong></p>
+<ol>
+<li>第一步：准备苹果id，进入AppStore</li>
+</ol>
+<ul>
+<li>进入AppStore，搜索Addons，下载安装</li>
+<li><img src="https://pngs.xiaotaolive.club/IMG_0164.png" alt="Addons软件">  </li>
+<li>进入设置，找到Safari浏览器，打开Addons的扩展功能</li>
+<li><img src="https://pngs.xiaotaolive.club/IMG_0165.png" alt="设置页面"></li>
+<li>搜索一个脚本站点的，如[脚本站点](<a href="https://greasyfork.org/zh-CN%EF%BC%89">https://greasyfork.org/zh-CN）</a></li>
+<li>搜索一个脚本比如：<strong>VIP</strong></li>
+<li>找到合适的比如：<strong>玩的嗨系列脚本</strong>，安装即可</li>
+<li><img src="https://pngs.xiaotaolive.club/IMG_0166.png" alt="脚本页面"></li>
+<li></li>
+<li>如果出现提示框，点击下面的小字即可，随后再点一次 <strong>安装</strong>。即可进入安装界面</li>
+<li>如果你开启了 <strong>Addons拓展</strong>，便会在页面底部发现：<strong>检测到脚本</strong>字样，点击即可</li>
+<li><img src="https://pngs.xiaotaolive.club/IMG_0168.png" alt="安裝页面"></li>
+<li>随后 <strong>Addons</strong>会自动安装脚本</li>
+<li><img src="https://pngs.xiaotaolive.club/IMG_0169.png" alt="点击安装"></li>
+<li>安装完成后来到随机一个页面使用即可，比如：<strong>爱奇艺</strong>的某些电视剧</li>
+<li>个别脚本第一次运行会有：<strong>用户协议</strong>或者 <strong>其他提示</strong>，确认即可，按照 <strong>脚本提示</strong>即可完成初次使用</li>
+</ul>
+<h2 id="第二个功能：m3u8嗅探"><a href="#第二个功能：m3u8嗅探" class="headerlink" title="第二个功能：m3u8嗅探"></a>第二个功能：m3u8嗅探</h2><pre><code>M3U8是什么：
+文件格式： M3U8是一种多媒体播放列表文件格式。
+基于M3U8： 它是基于M3U格式的扩展，专门用于流媒体传输。
+URL列表： M3U8文件包含一系列URL地址，指向分段的音频或视频文件，通常以TS格式存储
+M3U8的用途：在线播放： 主要用于指导流媒体播放器如何播放音频或视频流。
+直播流媒体： 适用于在线直播，例如体育赛事、新闻报道等。
+视频点播： 用于动态分发视频内容，提供更好的用户体验和更高的流媒体传输效率。
+</code></pre>
+<p>介绍了 <strong>m3u8</strong>之后，我们开始进行资源嗅探，他会针对你 <strong>当前页面的资源</strong>进行嗅探，如存在视频时，会这样显示<br><img src="https://png1.xiaotaolive.cfd/IMG_0189.png" alt="m3u8识别界面"><strong>发现嗅探到的资源</strong>后，点击（<strong>Download</strong>按钮）即可跳转到播放页面原彩观看视频了</p>
+<p>效果如下<br>到了 <strong>播放页面</strong>不需真的下载，直接播放即可<br><img src="https://pngs.xiaotaolive.club/IMG_0188.png" alt="播放效果"></p>
+<h2 id="问题询问：小小开发者"><a href="#问题询问：小小开发者" class="headerlink" title="问题询问：小小开发者"></a>问题询问：小小开发者</h2><p><strong>邮箱：</strong> <a href="mailto:&#99;&#114;&#x61;&#x7a;&#121;&#x32;&#x34;&#48;&#51;&#64;&#x6f;&#x75;&#116;&#108;&#x6f;&#111;&#107;&#x2e;&#x63;&#111;&#109;">&#99;&#114;&#x61;&#x7a;&#121;&#x32;&#x34;&#48;&#51;&#64;&#x6f;&#x75;&#116;&#108;&#x6f;&#111;&#107;&#x2e;&#x63;&#111;&#109;</a><br><strong>xhs主页</strong>：<a href="https://www.xiaohongshu.com/user/profile/62eb9560000000001f0072b5?xhsshare=CopyLink&appuid=62eb9560000000001f0072b5&apptime=1712590620">xhs链接</a><br><strong>投稿邮箱：</strong> <a href="mailto:&#x63;&#114;&#97;&#x7a;&#121;&#x32;&#52;&#48;&#51;&#x40;&#111;&#x75;&#116;&#108;&#x6f;&#x6f;&#107;&#46;&#99;&#111;&#109;">&#x63;&#114;&#97;&#x7a;&#121;&#x32;&#52;&#48;&#51;&#x40;&#111;&#x75;&#116;&#108;&#x6f;&#x6f;&#107;&#46;&#99;&#111;&#109;</a></p>
+]]></content>
+      <tags>
+        <tag>技术 生活 追剧</tag>
       </tags>
   </entry>
   <entry>
