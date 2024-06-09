@@ -32,117 +32,7 @@
 <li>进入NameCheap的管理页面后，即可看到默认的NS记录</li>
 <li>接下来继续我们的教程</li>
 </ol>
-<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#x43;&#x72;&#x61;&#x7a;&#121;&#50;&#52;&#x30;&#51;&#64;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#107;&#x2e;&#x63;&#x6f;&#x6d;">&#x43;&#x72;&#x61;&#x7a;&#121;&#50;&#52;&#x30;&#51;&#64;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#107;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
-<h3 id="修改域名默认的NS记录"><a href="#修改域名默认的NS记录" class="headerlink" title="修改域名默认的NS记录"></a>修改域名默认的NS记录</h3><p>进入后台管理界面，你可以看到红圈部分就是默认NS的位置，这张图是修改好的，已经托管到了CF上面<br><img src="https://png1.xiaotaolive.cfd/ns%E8%AE%B0%E5%BD%95.png"></p>
-<ol>
-<li>既然你已经修改好了NS记录，那么过一段时间，CF检测通过了，这个域名就会在上一张图显示出来，我这里托管的域名是Xtxtudy.site</li>
-<li>如果你购买了域名，且修改了NS记录，还没有托管，接下来就可以开始你的工作了<ol>
-<li>首先，点击 <strong>添加站点</strong></li>
-<li>输入你购买的域名</li>
-<li>选择套餐，下拉选择 <strong>Free套餐</strong>，如果需要绑定支付方式，可选择 <strong>PayPal</strong>，绑定通过之后，继续下一步</li>
-<li>然后就自动开始检查你的域名了，如果NS和CF的不符，会出现提示，如下图(5)所示</li>
-<li><img src="https://png1.xiaotaolive.cfd/cf%E6%8F%90%E7%A4%BA%E7%95%8C%E9%9D%A2.png"></li>
-<li>修改NS记录时，将提示 <strong>我们为您分配的CF名称服务器</strong>分别复制到你域名管理页面的NS记录并修改，修改之后，可在这个页面点击检查</li>
-<li>检查通过后，会有CF的电子邮件发到你注册的邮箱，告知你 <strong>你的域名XXX已经可用</strong></li>
-<li>这时，你已经完成了，购买，修改NS记录，已经注册和托管到CF了</li>
-<li>快去夸一夸自己的学习力吧</li>
-</ol>
-</li>
-</ol>
-<h2 id="搭建节点所需的内容"><a href="#搭建节点所需的内容" class="headerlink" title="搭建节点所需的内容"></a>搭建节点所需的内容</h2><ol>
-<li>一个可用的托管好的域名 </li>
-<li>开启你的workers程序</li>
-<li>找到一个可以搭建节点的代码</li>
-<li>一个uuid生成网站</li>
-<li>编辑代码自定义域名，后面会讲到</li>
-</ol>
-<h4 id="创建workers"><a href="#创建workers" class="headerlink" title="创建workers"></a>创建workers</h4><ol>
-<li>在CF的主界面点击 <strong>Workers Pages</strong>，看到如下界面，点击 <strong>创建应用程序</strong></li>
-<li><img src="https://png1.xiaotaolive.cfd/%E7%95%8C%E9%9D%A2.png"></li>
-<li>然后来到这个界面，这时你要准备一些内容，就是第三步的代码<ol>
-<li>代码1：<a href="https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js">代码1</a></li>
-<li>代码2：<a href="https://github.com/Misaka-blog/cf-wkrs-pages-vless/blob/main/_worker.js">代码2</a></li>
-<li>UUID生成链接：<a href="https://www.uuidgenerator.net/">uuid在线生成</a></li>
-<li>一些说明：推荐使用Misaka的，他在原版基础上加了站点伪装和初始的proxyIP 需要修改两个地方 userID 和 proxyIP 。  userID可以理解为 为了隐藏我们的节点，也防止被人白嫖。 可以随便填写，也可以用在线工具生成</li>
-</ol>
-</li>
-<li>优选IP或者域名<ol>
-<li>这些仅供参考：</li>
-<li>cdn-all.xn–b6gac.eu.org</li>
-<li>cdn.xn–b6gac.eu.org</li>
-<li>cdn-b100.xn–b6gac.eu.org</li>
-<li>edgetunnel.anycast.eu.org</li>
-<li>cdn.anycast.eu.org</li>
-</ol>
-</li>
-</ol>
-<h2 id="创建和编辑，为上述的3-4-5步"><a href="#创建和编辑，为上述的3-4-5步" class="headerlink" title="创建和编辑，为上述的3&#x2F;4&#x2F;5步"></a>创建和编辑，为上述的3&#x2F;4&#x2F;5步</h2><p>这里演示以代码1做案例<br>代码1链接<a href="(https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js">代码1</a><br>如图所示：<br><img src="https://pngs.xiaotaolive.club/%E4%BB%A3%E7%A0%81%E7%95%8C%E9%9D%A2.png" alt="代码1的复制界面"><br>复制粘贴到workers的编辑界面<br><img src="https://png1.xiaotaolive.cfd/%E7%B2%98%E8%B4%B4%E4%B9%8B%E5%90%8E%E5%A6%82%E5%9B%BE.png"><br>点击刚刚的 <strong>uuid在线生成</strong>，获取一个uuid，粘贴到代码uuid的位置<br>也要点击刚刚的 <strong>优选域名</strong>，任选一个填入IP的引号内（非必须）<br>点击部署即可</p>
-<h3 id="重点：一定要记住你的uuid，否则无法获取订阅"><a href="#重点：一定要记住你的uuid，否则无法获取订阅" class="headerlink" title="重点：一定要记住你的uuid，否则无法获取订阅"></a>重点：一定要记住你的uuid，否则无法获取订阅</h3><h2 id="完成了部署之后"><a href="#完成了部署之后" class="headerlink" title="完成了部署之后"></a>完成了部署之后</h2><h3 id="点击Workees-Pages，回到页面"><a href="#点击Workees-Pages，回到页面" class="headerlink" title="点击Workees Pages，回到页面"></a>点击<strong>Workees Pages</strong>，回到页面</h3><p>找到刚刚创建的名字为Teach的workers，点击进入<br><img src="https://pngs.xiaotaolive.club/workes.png"></p>
-<h3 id="点击设置-触发器-自定义域"><a href="#点击设置-触发器-自定义域" class="headerlink" title="点击设置-触发器-自定义域"></a>点击设置-触发器-自定义域</h3><p><img src="https://png1.xiaotaolive.cfd/%E8%AE%BE%E7%BD%AE.png" alt="界面"></p>
-<h3 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h3><p>点击后，输入你托管的域名，可以是二级域名<br>如你买的域名为<strong>A.com</strong>，那么二级域名可以写为：<strong>B.A.com</strong><br>我测试的域名为xtxtudy.xite，那么二级域名为daliy.xtstudy.xtie</p>
-<h2 id="获取订阅链接"><a href="#获取订阅链接" class="headerlink" title="获取订阅链接"></a>获取订阅链接</h2><p>由于刚刚你写好了 <strong>uuid和自定义域</strong>，获取链接时在浏览器输入：<strong>你的自定义域名&#x2F;uuid</strong>即可访问页面<br>复制VLESS开头的即可<br>如我的自定义域名是daily.xtstudy.site，uuid是1234<br>链接就是daily.xtstudy.site&#x2F;1234<br>你的链接也是同理，操作时注意即可</p>
-<h2 id="本期内容仅供学习交流，不做任何其他引导"><a href="#本期内容仅供学习交流，不做任何其他引导" class="headerlink" title="本期内容仅供学习交流，不做任何其他引导"></a>本期内容仅供学习交流，不做任何其他引导</h2><h2 id="作者邮箱：Crazy2403outlook-com"><a href="#作者邮箱：Crazy2403outlook-com" class="headerlink" title="作者邮箱：Crazy2403outlook.com"></a>作者邮箱：Crazy2403outlook.com</h2>]]></content>
-      <tags>
-        <tag>CF 域名 技术 学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一篇教程：ChatGPT</title>
-    <url>/01/</url>
-    <content><![CDATA[<h1 id="什么？我没有GPT也没有魔法？"><a href="#什么？我没有GPT也没有魔法？" class="headerlink" title="什么？我没有GPT也没有魔法？"></a>什么？我没有GPT也没有魔法？</h1><h2 id="1：我该怎么办？"><a href="#1：我该怎么办？" class="headerlink" title="1：我该怎么办？"></a>1：我该怎么办？</h2><p>还没有GPT吗？今天我们就来介绍一下怎么注册，需要的准备事项，以及你需要如何操作</p>
-<p>首先，<strong>一个值得信任的机场</strong>是必须有的，<strong>也决定了你是否可以进到注册页面！</strong></p>
-<p>所以，根据上面的说法，<strong>作者也为大家准备了一家不错的机场供大家选择</strong></p>
-<span id="more"></span>
-<p><strong>第一位：三分</strong>：<br>推荐的主要原因就是便宜了！年付套餐才10块钱，这么便宜，还要什么自行车呢？<br><strong>优势：</strong> 便宜，且量大，速度有保障<br><strong>不足</strong>：个别时间地点存在不可用的现象，原因众所周知<br><img src="https://png1.xiaotaolive.cfd/Screenshot_20240413_172649.jpg" alt="三分机场购买页面"><br>如果心动，请抓紧哦！<strong>点击带有邀请码的链接享受优惠</strong><a href="https://shop.sanfen.co/#/register?code=YoRhN4la">三分购买链接</a></p>
-<p>上一位在你预算有限且需要GPT等软件时考虑</p>
-<p>接下来介绍第二位：<strong>Gatern</strong><br><strong>推荐原因：</strong> 低延迟，随时随地拿手即用，稳定使用GPT,节点众多，覆盖面大<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_173749.jpg" alt="Gatern购买界面"><br>作者个人推荐这个机场，因为他除了众所周知的用途之外，也可以直接用于台服等外服游戏的直连，延迟均在理想范围，这一点作者已经测试<br>考虑这一家的小伙伴可以点击下方链接去看看详细情况：<br><strong>购买链接（点击即可）</strong>：<a href="https://shuttle.gt-all.com/aff.php?aff=8837">Gatern机场</a></p>
-<p>第三家：<strong>深蓝云</strong><br>这也是作者多次续订的一家，具备Chatgpt的专线，便宜且好用，也有家宽专用节点<br><strong>优势</strong>：便宜，月付，支持GPT，自带优惠码<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_174747.jpg" alt="自带优惠的深蓝云"><br><strong>优惠码：shenlan，输入自带八折优惠</strong><br><strong>链接</strong>：<a href="https://www.slplus.one/#/register?code=nRTPHmco">深蓝云传送门</a></p>
-<h2 id="2：我准备好了！接下来。。。"><a href="#2：我准备好了！接下来。。。" class="headerlink" title="2：我准备好了！接下来。。。"></a>2：我准备好了！接下来。。。</h2><p><strong>如果你都准备好了，那么就开始注册的环节了</strong><br>安卓手机需要<strong>Nekobox</strong>，或者<strong>V2rayng</strong>等工具<br>苹果请准备<strong>shadowrocket</strong> 软件，以获取订阅和开展下一步</p>
-<h2 id="3：我拿到了订阅，接下来？"><a href="#3：我拿到了订阅，接下来？" class="headerlink" title="3：我拿到了订阅，接下来？"></a>3：我拿到了订阅，接下来？</h2><p><strong>开始前必看</strong>：确认<strong>获取了订阅</strong>之后，接下来要在<strong>全局模式</strong>下打开一个<strong>开启无痕模式</strong>的浏览器<br>做好</p>
-<p>接下来，打开<strong>浏览器</strong>，进入<strong>注册环节</strong><br>点击传送门进入openai的注册<br><strong>传送门</strong>：<a href="https://auth0.openai.com/u/signup/identifier?state=hKFo2SBaVTZ2eGJsS2NYOUhFeTh2ZU1IeHpjZFB6bFFFWk9ZOKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGxCZE5pN0toQkszNHNOWGJfVXNaUWdGRk1ydWwwdnlEo2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc">openai注册页面</a></p>
-<p>到了这一步，如果你看到了注册页面，就说明已经成功了一半</p>
-<p>这是你需要在以下几个网站获取一个邮箱，如<strong>outlook</strong>，<strong>Gmail</strong>等等，教学会用<strong>outlook</strong>进行</p>
-<p><a href="https://signup.live.com/signup?lcid=1033&wa=wsignin1.0&rpsnv=23&ct=1713002920&rver=7.0.6738.0&wp=MBI_SSL&wreply=https://outlook.live.com/owa/?nlp=1&signup=1&RpsCsrfState=1158db03-92dd-97c2-7404-bef9b1fca2ce&id=292841&CBCXT=out&lw=1&fl=dob,flname,wld&cobrandid=90015&lic=1&uaid=f6db1c6fc55a40108fc793fe415740ed">outlook注册链接</a><br>注册时选择<strong>outlook.com</strong>的后缀即可，注册好之后，就拿到了一个可以用的链接</p>
-<p>拿到了outlook邮箱，回到这里填写<br><img src="https://png1.xiaotaolive.cfd/Screenshot_20240413_181124.jpg" alt="注册页面"><br>接下来你会收到<strong>openai</strong>的验证码，在邮箱可以找到<br>如下图所示，<strong>长按验证按钮复制链接</strong>，然后去<strong>浏览器粘贴</strong>，即可进入信息填写页面，填写名字即可<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_181402.jpg" alt="example"><br>信息写完之后，你就发现，你来到了网页版Chatgpt的聊天界面，接下来你就可以自由使用了！<br>如下图所示：<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_181806.jpg" alt="注册成功截图"></p>
-<h2 id="4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧"><a href="#4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧" class="headerlink" title="4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧"></a>4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧</h2><h3 id="写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他"><a href="#写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他" class="headerlink" title="写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他"></a>写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他</h3><p><strong>作者邮箱</strong>： <a href="mailto:&#99;&#114;&#x61;&#122;&#x79;&#x32;&#x34;&#48;&#x33;&#x40;&#x6f;&#117;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#x2e;&#99;&#x6f;&#x6d;">&#99;&#114;&#x61;&#122;&#x79;&#x32;&#x34;&#48;&#x33;&#x40;&#x6f;&#117;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#x2e;&#99;&#x6f;&#x6d;</a><br><strong>投稿须知</strong>：本站仅用于分享，请注意保护你的隐私，投稿次之，安全为上，谨防电诈</p>
-]]></content>
-      <tags>
-        <tag>技术 生活 ChatGPT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>域名，CF节点搭配的妙用</title>
-    <url>/07/</url>
-    <content><![CDATA[<p>你是不是因为INS X GPT等软件无法使用而苦恼呢？是否因为X连会员太贵而苦恼呢？今天就教你一个简单的做法，来实现简单的操作吧</p>
-<h1 id="本期：域名和CF搭配的妙用：拥有自己的免费节点"><a href="#本期：域名和CF搭配的妙用：拥有自己的免费节点" class="headerlink" title="本期：域名和CF搭配的妙用：拥有自己的免费节点"></a>本期：域名和CF搭配的妙用：拥有自己的免费节点</h1><h2 id="首先，你要准备什么？"><a href="#首先，你要准备什么？" class="headerlink" title="首先，你要准备什么？"></a>首先，你要准备什么？</h2><h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>域名的购买可以说比较容易找到渠道，买一些XYZ后缀，或者我买的SITE后缀域名，价格也只需要十块左右就能买到一年期的域名<br>了解了前面小段所说的，就可以继续下一步了：去往购买的网站</p>
-<h3 id="购买域名的地方：namecheap"><a href="#购买域名的地方：namecheap" class="headerlink" title="购买域名的地方：namecheap"></a>购买域名的地方：namecheap</h3><p>推荐这家的理由 </p>
-<blockquote>
-<p>1 价格优惠<br>2 可选后缀多<br>3 不需要任何身份信息<br>4 可自由更换NS厂家，如CloudFlare</p>
-</blockquote>
-<p>基于以上好处，我们可以使用这个链接来到他的官网：[namecheap官网](<a href="https://www.namecheap.com/">Buy a domain name - Register cheap domain names from $0.99 - Namecheap</a>)</p>
-<span id="more"></span>
-
-<h2 id="来到了NameCheap要做什么？"><a href="#来到了NameCheap要做什么？" class="headerlink" title="来到了NameCheap要做什么？"></a>来到了NameCheap要做什么？</h2><p>首先这家域名商是支持邮箱注册的！qq邮箱也是可以的，本期就不过多赘述邮箱注册的步骤，直接上干货<br>进入官网 [namecheap官网](<a href="https://www.namecheap.com/">Buy a domain name - Register cheap domain names from $0.99 - Namecheap</a>)<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625406948-01.jpg" alt="官网"></p>
-<h3 id="进入官网后，根据文章操作"><a href="#进入官网后，根据文章操作" class="headerlink" title="进入官网后，根据文章操作"></a>进入官网后，根据文章操作</h3><p>在输入框输入你想要的名字，图片中的例子大家可以参考<br>输入完成后，点击 <strong>查询</strong> 即可<br>查询后，进入下图页面，如果你注册域名的后缀，显示有个购物车图标，那证明这个域名没有被人注册，你可以点击右边购物车，加入购物车进行购买。如果显示被人注册了，那你可以重复第一步，输入域名，再查询，直到你满意。<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407178-2.jpg"></p>
-<h3 id="加入购物车，下一步"><a href="#加入购物车，下一步" class="headerlink" title="加入购物车，下一步"></a>加入购物车，下一步</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407408-3.jpg"></p>
-<h3 id="确认购买信息"><a href="#确认购买信息" class="headerlink" title="确认购买信息"></a>确认购买信息</h3><p>如下图所示<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407654-4.jpg"></p>
-<h3 id="进入下一步，填写资料，之后下一步"><a href="#进入下一步，填写资料，之后下一步" class="headerlink" title="进入下一步，填写资料，之后下一步"></a>进入下一步，填写资料，之后下一步</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625408391-5.jpg"></p>
-<h3 id="下一步就是选择支付方式了"><a href="#下一步就是选择支付方式了" class="headerlink" title="下一步就是选择支付方式了"></a>下一步就是选择支付方式了</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409379-7.jpg"><br>我选择的是Paypal，可以进行绑卡操作，直接结算</p>
-<h3 id="之后会跳转到Paypal界面结算"><a href="#之后会跳转到Paypal界面结算" class="headerlink" title="之后会跳转到Paypal界面结算"></a>之后会跳转到Paypal界面结算</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409573-8.jpg"></p>
-<h3 id="支付后，等待出现成功界面，这个域名就已经买到手了"><a href="#支付后，等待出现成功界面，这个域名就已经买到手了" class="headerlink" title="支付后，等待出现成功界面，这个域名就已经买到手了"></a>支付后，等待出现成功界面，这个域名就已经买到手了</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409577-9.jpg"></p>
-<h2 id="完成购买后要做的"><a href="#完成购买后要做的" class="headerlink" title="完成购买后要做的"></a>完成购买后要做的</h2><h3 id="来到个人中心，会看到域名列表，你刚刚购买的会在这里看到"><a href="#来到个人中心，会看到域名列表，你刚刚购买的会在这里看到" class="headerlink" title="来到个人中心，会看到域名列表，你刚刚购买的会在这里看到"></a>来到个人中心，会看到域名列表，你刚刚购买的会在这里看到</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625410447-10.jpg"></p>
-<h3 id="到这里，你就完成了本期内容的一半"><a href="#到这里，你就完成了本期内容的一半" class="headerlink" title="到这里，你就完成了本期内容的一半"></a>到这里，你就完成了本期内容的一半</h3><p>接下来，会告诉你如何切换NS厂商，来实现进一步的域名管理<br>在此之前，要对本部分内容进行补充：</p>
-<ol>
-<li>首先是第一次使用这个网站的朋友们，可能没有或没有接触过PayPal这个东西，所以我在这里补充Paypal的官网链接，你可以自行去注册，地区要选择中国，建议有个人银行卡或者其他卡进行绑卡，再来网站支付购买</li>
-<li>Paypal官网：<a href="https://www.paypal.com/c2/webapps/mpp/account-selection">paypal官网</a></li>
-<li>NS厂商官网：<a href="https://www.cloudflare.com/">CkoudFlare官网</a></li>
-<li>接下来需要准备的东西</li>
-<li>可用的邮箱</li>
-<li>给你刚买好的域名更改NS记录</li>
-<li>进入NameCheap的管理页面后，即可看到默认的NS记录</li>
-<li>接下来继续我们的教程</li>
-</ol>
-<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#67;&#x72;&#97;&#122;&#121;&#50;&#52;&#48;&#51;&#64;&#111;&#x75;&#116;&#x6c;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">&#67;&#x72;&#97;&#122;&#121;&#50;&#52;&#48;&#51;&#64;&#111;&#x75;&#116;&#x6c;&#111;&#111;&#107;&#46;&#99;&#111;&#109;</a></p>
+<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#x43;&#x72;&#x61;&#x7a;&#x79;&#x32;&#52;&#x30;&#x33;&#x40;&#x6f;&#117;&#116;&#108;&#x6f;&#111;&#x6b;&#46;&#x63;&#x6f;&#x6d;">&#x43;&#x72;&#x61;&#x7a;&#x79;&#x32;&#52;&#x30;&#x33;&#x40;&#x6f;&#117;&#116;&#108;&#x6f;&#111;&#x6b;&#46;&#x63;&#x6f;&#x6d;</a></p>
 <h3 id="修改域名默认的NS记录"><a href="#修改域名默认的NS记录" class="headerlink" title="修改域名默认的NS记录"></a>修改域名默认的NS记录</h3><p>进入后台管理界面，你可以看到红圈部分就是默认NS的位置，这张图是修改好的，已经托管到了CF上面<br><img src="https://png1.xiaotaolive.cfd/ns%E8%AE%B0%E5%BD%95.png"></p>
 <ol>
 <li>既然你已经修改好了NS记录，那么过一段时间，CF检测通过了，这个域名就会在上一张图显示出来，我这里托管的域名是Xtxtudy.site</li>
@@ -198,7 +88,7 @@
   </entry>
   <entry>
     <title>不需要會員也可以追劇</title>
-    <url>/01/</url>
+    <url>/14/</url>
     <content><![CDATA[<h2 id="本期内容：Addons软件"><a href="#本期内容：Addons软件" class="headerlink" title="本期内容：Addons软件"></a>本期内容：Addons软件</h2><h3 id="问：这是一个什么软件"><a href="#问：这是一个什么软件" class="headerlink" title="问：这是一个什么软件"></a>问：这是一个什么软件</h3><pre><code>答：他是一个很方便的浏览器扩展工具
 有两个很好用的基础功能：脚本和资源嗅探
 </code></pre>
@@ -240,10 +130,34 @@ M3U8的用途：在线播放： 主要用于指导流媒体播放器如何播放
 </code></pre>
 <p>介绍了 <strong>m3u8</strong>之后，我们开始进行资源嗅探，他会针对你 <strong>当前页面的资源</strong>进行嗅探，如存在视频时，会这样显示<br><img src="https://png1.xiaotaolive.cfd/IMG_0189.png" alt="m3u8识别界面"><strong>发现嗅探到的资源</strong>后，点击（<strong>Download</strong>按钮）即可跳转到播放页面原彩观看视频了</p>
 <p>效果如下<br>到了 <strong>播放页面</strong>不需真的下载，直接播放即可<br><img src="https://pngs.xiaotaolive.club/IMG_0188.png" alt="播放效果"></p>
-<h2 id="问题询问：小小开发者"><a href="#问题询问：小小开发者" class="headerlink" title="问题询问：小小开发者"></a>问题询问：小小开发者</h2><p><strong>邮箱：</strong> <a href="mailto:&#99;&#114;&#x61;&#x7a;&#121;&#50;&#52;&#48;&#x33;&#64;&#111;&#x75;&#116;&#108;&#x6f;&#x6f;&#107;&#46;&#x63;&#111;&#109;">&#99;&#114;&#x61;&#x7a;&#121;&#50;&#52;&#48;&#x33;&#64;&#111;&#x75;&#116;&#108;&#x6f;&#x6f;&#107;&#46;&#x63;&#111;&#109;</a><br><strong>xhs主页</strong>：<a href="https://www.xiaohongshu.com/user/profile/62eb9560000000001f0072b5?xhsshare=CopyLink&appuid=62eb9560000000001f0072b5&apptime=1712590620">xhs链接</a><br><strong>投稿邮箱：</strong> <a href="mailto:&#x63;&#114;&#97;&#122;&#x79;&#x32;&#52;&#48;&#51;&#64;&#111;&#x75;&#x74;&#108;&#x6f;&#x6f;&#107;&#46;&#x63;&#111;&#x6d;">&#x63;&#114;&#97;&#122;&#x79;&#x32;&#52;&#48;&#51;&#64;&#111;&#x75;&#x74;&#108;&#x6f;&#x6f;&#107;&#46;&#x63;&#111;&#x6d;</a></p>
+<h2 id="问题询问：小小开发者"><a href="#问题询问：小小开发者" class="headerlink" title="问题询问：小小开发者"></a>问题询问：小小开发者</h2><p><strong>邮箱：</strong> <a href="mailto:&#x63;&#x72;&#97;&#122;&#121;&#50;&#x34;&#48;&#51;&#x40;&#111;&#117;&#x74;&#x6c;&#111;&#x6f;&#107;&#x2e;&#99;&#x6f;&#x6d;">&#x63;&#x72;&#97;&#122;&#121;&#50;&#x34;&#48;&#51;&#x40;&#111;&#117;&#x74;&#x6c;&#111;&#x6f;&#107;&#x2e;&#99;&#x6f;&#x6d;</a><br><strong>xhs主页</strong>：<a href="https://www.xiaohongshu.com/user/profile/62eb9560000000001f0072b5?xhsshare=CopyLink&appuid=62eb9560000000001f0072b5&apptime=1712590620">xhs链接</a><br><strong>投稿邮箱：</strong> <a href="mailto:&#99;&#x72;&#x61;&#122;&#x79;&#50;&#52;&#x30;&#51;&#64;&#111;&#x75;&#116;&#x6c;&#111;&#x6f;&#107;&#46;&#x63;&#x6f;&#109;">&#99;&#x72;&#x61;&#122;&#x79;&#50;&#52;&#x30;&#51;&#64;&#111;&#x75;&#116;&#x6c;&#111;&#x6f;&#107;&#46;&#x63;&#x6f;&#109;</a></p>
 ]]></content>
       <tags>
         <tag>技术 生活 追剧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一篇教程：ChatGPT</title>
+    <url>/01/</url>
+    <content><![CDATA[<h1 id="什么？我没有GPT也没有魔法？"><a href="#什么？我没有GPT也没有魔法？" class="headerlink" title="什么？我没有GPT也没有魔法？"></a>什么？我没有GPT也没有魔法？</h1><h2 id="1：我该怎么办？"><a href="#1：我该怎么办？" class="headerlink" title="1：我该怎么办？"></a>1：我该怎么办？</h2><p>还没有GPT吗？今天我们就来介绍一下怎么注册，需要的准备事项，以及你需要如何操作</p>
+<p>首先，<strong>一个值得信任的机场</strong>是必须有的，<strong>也决定了你是否可以进到注册页面！</strong></p>
+<p>所以，根据上面的说法，<strong>作者也为大家准备了一家不错的机场供大家选择</strong></p>
+<span id="more"></span>
+<p><strong>第一位：三分</strong>：<br>推荐的主要原因就是便宜了！年付套餐才10块钱，这么便宜，还要什么自行车呢？<br><strong>优势：</strong> 便宜，且量大，速度有保障<br><strong>不足</strong>：个别时间地点存在不可用的现象，原因众所周知<br><img src="https://png1.xiaotaolive.cfd/Screenshot_20240413_172649.jpg" alt="三分机场购买页面"><br>如果心动，请抓紧哦！<strong>点击带有邀请码的链接享受优惠</strong><a href="https://shop.sanfen.co/#/register?code=YoRhN4la">三分购买链接</a></p>
+<p>上一位在你预算有限且需要GPT等软件时考虑</p>
+<p>接下来介绍第二位：<strong>Gatern</strong><br><strong>推荐原因：</strong> 低延迟，随时随地拿手即用，稳定使用GPT,节点众多，覆盖面大<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_173749.jpg" alt="Gatern购买界面"><br>作者个人推荐这个机场，因为他除了众所周知的用途之外，也可以直接用于台服等外服游戏的直连，延迟均在理想范围，这一点作者已经测试<br>考虑这一家的小伙伴可以点击下方链接去看看详细情况：<br><strong>购买链接（点击即可）</strong>：<a href="https://shuttle.gt-all.com/aff.php?aff=8837">Gatern机场</a></p>
+<p>第三家：<strong>深蓝云</strong><br>这也是作者多次续订的一家，具备Chatgpt的专线，便宜且好用，也有家宽专用节点<br><strong>优势</strong>：便宜，月付，支持GPT，自带优惠码<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_174747.jpg" alt="自带优惠的深蓝云"><br><strong>优惠码：shenlan，输入自带八折优惠</strong><br><strong>链接</strong>：<a href="https://www.slplus.one/#/register?code=nRTPHmco">深蓝云传送门</a></p>
+<h2 id="2：我准备好了！接下来。。。"><a href="#2：我准备好了！接下来。。。" class="headerlink" title="2：我准备好了！接下来。。。"></a>2：我准备好了！接下来。。。</h2><p><strong>如果你都准备好了，那么就开始注册的环节了</strong><br>安卓手机需要<strong>Nekobox</strong>，或者<strong>V2rayng</strong>等工具<br>苹果请准备<strong>shadowrocket</strong> 软件，以获取订阅和开展下一步</p>
+<h2 id="3：我拿到了订阅，接下来？"><a href="#3：我拿到了订阅，接下来？" class="headerlink" title="3：我拿到了订阅，接下来？"></a>3：我拿到了订阅，接下来？</h2><p><strong>开始前必看</strong>：确认<strong>获取了订阅</strong>之后，接下来要在<strong>全局模式</strong>下打开一个<strong>开启无痕模式</strong>的浏览器<br>做好</p>
+<p>接下来，打开<strong>浏览器</strong>，进入<strong>注册环节</strong><br>点击传送门进入openai的注册<br><strong>传送门</strong>：<a href="https://auth0.openai.com/u/signup/identifier?state=hKFo2SBaVTZ2eGJsS2NYOUhFeTh2ZU1IeHpjZFB6bFFFWk9ZOKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGxCZE5pN0toQkszNHNOWGJfVXNaUWdGRk1ydWwwdnlEo2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc">openai注册页面</a></p>
+<p>到了这一步，如果你看到了注册页面，就说明已经成功了一半</p>
+<p>这是你需要在以下几个网站获取一个邮箱，如<strong>outlook</strong>，<strong>Gmail</strong>等等，教学会用<strong>outlook</strong>进行</p>
+<p><a href="https://signup.live.com/signup?lcid=1033&wa=wsignin1.0&rpsnv=23&ct=1713002920&rver=7.0.6738.0&wp=MBI_SSL&wreply=https://outlook.live.com/owa/?nlp=1&signup=1&RpsCsrfState=1158db03-92dd-97c2-7404-bef9b1fca2ce&id=292841&CBCXT=out&lw=1&fl=dob,flname,wld&cobrandid=90015&lic=1&uaid=f6db1c6fc55a40108fc793fe415740ed">outlook注册链接</a><br>注册时选择<strong>outlook.com</strong>的后缀即可，注册好之后，就拿到了一个可以用的链接</p>
+<p>拿到了outlook邮箱，回到这里填写<br><img src="https://png1.xiaotaolive.cfd/Screenshot_20240413_181124.jpg" alt="注册页面"><br>接下来你会收到<strong>openai</strong>的验证码，在邮箱可以找到<br>如下图所示，<strong>长按验证按钮复制链接</strong>，然后去<strong>浏览器粘贴</strong>，即可进入信息填写页面，填写名字即可<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_181402.jpg" alt="example"><br>信息写完之后，你就发现，你来到了网页版Chatgpt的聊天界面，接下来你就可以自由使用了！<br>如下图所示：<br><img src="https://pngs.xiaotaolive.club/Screenshot_20240413_181806.jpg" alt="注册成功截图"></p>
+<h2 id="4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧"><a href="#4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧" class="headerlink" title="4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧"></a>4：至此，恭喜你，你已经完成了所有步骤，开始你的GPT之旅吧</h2><h3 id="写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他"><a href="#写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他" class="headerlink" title="写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他"></a>写在末尾：AI虽好，切勿用作不端，合理利用方可便利你我他</h3><p><strong>作者邮箱</strong>： <a href="mailto:&#x63;&#x72;&#x61;&#122;&#x79;&#50;&#x34;&#x30;&#x33;&#x40;&#x6f;&#117;&#x74;&#x6c;&#111;&#x6f;&#107;&#x2e;&#x63;&#x6f;&#x6d;">&#x63;&#x72;&#x61;&#122;&#x79;&#50;&#x34;&#x30;&#x33;&#x40;&#x6f;&#117;&#x74;&#x6c;&#111;&#x6f;&#107;&#x2e;&#x63;&#x6f;&#x6d;</a><br><strong>投稿须知</strong>：本站仅用于分享，请注意保护你的隐私，投稿次之，安全为上，谨防电诈</p>
+]]></content>
+      <tags>
+        <tag>技术 生活 ChatGPT</tag>
       </tags>
   </entry>
   <entry>
@@ -405,6 +319,201 @@ M3U8的用途：在线播放： 主要用于指导流媒体播放器如何播放
       </tags>
   </entry>
   <entry>
+    <title>域名，CF节点搭配的妙用</title>
+    <url>/07/</url>
+    <content><![CDATA[<p>你是不是因为INS X GPT等软件无法使用而苦恼呢？是否因为X连会员太贵而苦恼呢？今天就教你一个简单的做法，来实现简单的操作吧</p>
+<h1 id="本期：域名和CF搭配的妙用：拥有自己的免费节点"><a href="#本期：域名和CF搭配的妙用：拥有自己的免费节点" class="headerlink" title="本期：域名和CF搭配的妙用：拥有自己的免费节点"></a>本期：域名和CF搭配的妙用：拥有自己的免费节点</h1><h2 id="首先，你要准备什么？"><a href="#首先，你要准备什么？" class="headerlink" title="首先，你要准备什么？"></a>首先，你要准备什么？</h2><h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>域名的购买可以说比较容易找到渠道，买一些XYZ后缀，或者我买的SITE后缀域名，价格也只需要十块左右就能买到一年期的域名<br>了解了前面小段所说的，就可以继续下一步了：去往购买的网站</p>
+<h3 id="购买域名的地方：namecheap"><a href="#购买域名的地方：namecheap" class="headerlink" title="购买域名的地方：namecheap"></a>购买域名的地方：namecheap</h3><p>推荐这家的理由 </p>
+<blockquote>
+<p>1 价格优惠<br>2 可选后缀多<br>3 不需要任何身份信息<br>4 可自由更换NS厂家，如CloudFlare</p>
+</blockquote>
+<p>基于以上好处，我们可以使用这个链接来到他的官网：[namecheap官网](<a href="https://www.namecheap.com/">Buy a domain name - Register cheap domain names from $0.99 - Namecheap</a>)</p>
+<span id="more"></span>
+
+<h2 id="来到了NameCheap要做什么？"><a href="#来到了NameCheap要做什么？" class="headerlink" title="来到了NameCheap要做什么？"></a>来到了NameCheap要做什么？</h2><p>首先这家域名商是支持邮箱注册的！qq邮箱也是可以的，本期就不过多赘述邮箱注册的步骤，直接上干货<br>进入官网 [namecheap官网](<a href="https://www.namecheap.com/">Buy a domain name - Register cheap domain names from $0.99 - Namecheap</a>)<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625406948-01.jpg" alt="官网"></p>
+<h3 id="进入官网后，根据文章操作"><a href="#进入官网后，根据文章操作" class="headerlink" title="进入官网后，根据文章操作"></a>进入官网后，根据文章操作</h3><p>在输入框输入你想要的名字，图片中的例子大家可以参考<br>输入完成后，点击 <strong>查询</strong> 即可<br>查询后，进入下图页面，如果你注册域名的后缀，显示有个购物车图标，那证明这个域名没有被人注册，你可以点击右边购物车，加入购物车进行购买。如果显示被人注册了，那你可以重复第一步，输入域名，再查询，直到你满意。<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407178-2.jpg"></p>
+<h3 id="加入购物车，下一步"><a href="#加入购物车，下一步" class="headerlink" title="加入购物车，下一步"></a>加入购物车，下一步</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407408-3.jpg"></p>
+<h3 id="确认购买信息"><a href="#确认购买信息" class="headerlink" title="确认购买信息"></a>确认购买信息</h3><p>如下图所示<br><img src="https://heiwp.com/wp-content/uploads/2021/07/1625407654-4.jpg"></p>
+<h3 id="进入下一步，填写资料，之后下一步"><a href="#进入下一步，填写资料，之后下一步" class="headerlink" title="进入下一步，填写资料，之后下一步"></a>进入下一步，填写资料，之后下一步</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625408391-5.jpg"></p>
+<h3 id="下一步就是选择支付方式了"><a href="#下一步就是选择支付方式了" class="headerlink" title="下一步就是选择支付方式了"></a>下一步就是选择支付方式了</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409379-7.jpg"><br>我选择的是Paypal，可以进行绑卡操作，直接结算</p>
+<h3 id="之后会跳转到Paypal界面结算"><a href="#之后会跳转到Paypal界面结算" class="headerlink" title="之后会跳转到Paypal界面结算"></a>之后会跳转到Paypal界面结算</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409573-8.jpg"></p>
+<h3 id="支付后，等待出现成功界面，这个域名就已经买到手了"><a href="#支付后，等待出现成功界面，这个域名就已经买到手了" class="headerlink" title="支付后，等待出现成功界面，这个域名就已经买到手了"></a>支付后，等待出现成功界面，这个域名就已经买到手了</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625409577-9.jpg"></p>
+<h2 id="完成购买后要做的"><a href="#完成购买后要做的" class="headerlink" title="完成购买后要做的"></a>完成购买后要做的</h2><h3 id="来到个人中心，会看到域名列表，你刚刚购买的会在这里看到"><a href="#来到个人中心，会看到域名列表，你刚刚购买的会在这里看到" class="headerlink" title="来到个人中心，会看到域名列表，你刚刚购买的会在这里看到"></a>来到个人中心，会看到域名列表，你刚刚购买的会在这里看到</h3><p><img src="https://heiwp.com/wp-content/uploads/2021/07/1625410447-10.jpg"></p>
+<h3 id="到这里，你就完成了本期内容的一半"><a href="#到这里，你就完成了本期内容的一半" class="headerlink" title="到这里，你就完成了本期内容的一半"></a>到这里，你就完成了本期内容的一半</h3><p>接下来，会告诉你如何切换NS厂商，来实现进一步的域名管理<br>在此之前，要对本部分内容进行补充：</p>
+<ol>
+<li>首先是第一次使用这个网站的朋友们，可能没有或没有接触过PayPal这个东西，所以我在这里补充Paypal的官网链接，你可以自行去注册，地区要选择中国，建议有个人银行卡或者其他卡进行绑卡，再来网站支付购买</li>
+<li>Paypal官网：<a href="https://www.paypal.com/c2/webapps/mpp/account-selection">paypal官网</a></li>
+<li>NS厂商官网：<a href="https://www.cloudflare.com/">CkoudFlare官网</a></li>
+<li>接下来需要准备的东西</li>
+<li>可用的邮箱</li>
+<li>给你刚买好的域名更改NS记录</li>
+<li>进入NameCheap的管理页面后，即可看到默认的NS记录</li>
+<li>接下来继续我们的教程</li>
+</ol>
+<h2 id="更改NS记录和托管域名"><a href="#更改NS记录和托管域名" class="headerlink" title="更改NS记录和托管域名"></a>更改NS记录和托管域名</h2><h3 id="首先来到NS厂家的官网"><a href="#首先来到NS厂家的官网" class="headerlink" title="首先来到NS厂家的官网"></a>首先来到NS厂家的官网</h3><p>NS厂商官网：[CkoudFlare官网](<a href="https://www.cloudflare.com/">新标签页 (cloudflare.com)</a>)<br>使用邮箱注册登录即可，来到他的主界面，因为我已经托管了几个域名，而托管成功的就是更改了NS记录的域名<br>界面如图<br><img src="https://png1.xiaotaolive.cfd/cf%E7%95%8C%E9%9D%A2.png"><br>点击<strong>添加站点</strong><br>后续因为我已经把域名托管完成，所以只留下文字教程，如果有具体问题可联系我的邮箱<br><a href="mailto:&#67;&#114;&#x61;&#x7a;&#121;&#50;&#x34;&#x30;&#x33;&#x40;&#x6f;&#x75;&#116;&#108;&#111;&#x6f;&#107;&#46;&#99;&#111;&#x6d;">&#67;&#114;&#x61;&#x7a;&#121;&#50;&#x34;&#x30;&#x33;&#x40;&#x6f;&#x75;&#116;&#108;&#111;&#x6f;&#107;&#46;&#99;&#111;&#x6d;</a></p>
+<h3 id="修改域名默认的NS记录"><a href="#修改域名默认的NS记录" class="headerlink" title="修改域名默认的NS记录"></a>修改域名默认的NS记录</h3><p>进入后台管理界面，你可以看到红圈部分就是默认NS的位置，这张图是修改好的，已经托管到了CF上面<br><img src="https://png1.xiaotaolive.cfd/ns%E8%AE%B0%E5%BD%95.png"></p>
+<ol>
+<li>既然你已经修改好了NS记录，那么过一段时间，CF检测通过了，这个域名就会在上一张图显示出来，我这里托管的域名是Xtxtudy.site</li>
+<li>如果你购买了域名，且修改了NS记录，还没有托管，接下来就可以开始你的工作了<ol>
+<li>首先，点击 <strong>添加站点</strong></li>
+<li>输入你购买的域名</li>
+<li>选择套餐，下拉选择 <strong>Free套餐</strong>，如果需要绑定支付方式，可选择 <strong>PayPal</strong>，绑定通过之后，继续下一步</li>
+<li>然后就自动开始检查你的域名了，如果NS和CF的不符，会出现提示，如下图(5)所示</li>
+<li><img src="https://png1.xiaotaolive.cfd/cf%E6%8F%90%E7%A4%BA%E7%95%8C%E9%9D%A2.png"></li>
+<li>修改NS记录时，将提示 <strong>我们为您分配的CF名称服务器</strong>分别复制到你域名管理页面的NS记录并修改，修改之后，可在这个页面点击检查</li>
+<li>检查通过后，会有CF的电子邮件发到你注册的邮箱，告知你 <strong>你的域名XXX已经可用</strong></li>
+<li>这时，你已经完成了，购买，修改NS记录，已经注册和托管到CF了</li>
+<li>快去夸一夸自己的学习力吧</li>
+</ol>
+</li>
+</ol>
+<h2 id="搭建节点所需的内容"><a href="#搭建节点所需的内容" class="headerlink" title="搭建节点所需的内容"></a>搭建节点所需的内容</h2><ol>
+<li>一个可用的托管好的域名 </li>
+<li>开启你的workers程序</li>
+<li>找到一个可以搭建节点的代码</li>
+<li>一个uuid生成网站</li>
+<li>编辑代码自定义域名，后面会讲到</li>
+</ol>
+<h4 id="创建workers"><a href="#创建workers" class="headerlink" title="创建workers"></a>创建workers</h4><ol>
+<li>在CF的主界面点击 <strong>Workers Pages</strong>，看到如下界面，点击 <strong>创建应用程序</strong></li>
+<li><img src="https://png1.xiaotaolive.cfd/%E7%95%8C%E9%9D%A2.png"></li>
+<li>然后来到这个界面，这时你要准备一些内容，就是第三步的代码<ol>
+<li>代码1：<a href="https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js">代码1</a></li>
+<li>代码2：<a href="https://github.com/Misaka-blog/cf-wkrs-pages-vless/blob/main/_worker.js">代码2</a></li>
+<li>UUID生成链接：<a href="https://www.uuidgenerator.net/">uuid在线生成</a></li>
+<li>一些说明：推荐使用Misaka的，他在原版基础上加了站点伪装和初始的proxyIP 需要修改两个地方 userID 和 proxyIP 。  userID可以理解为 为了隐藏我们的节点，也防止被人白嫖。 可以随便填写，也可以用在线工具生成</li>
+</ol>
+</li>
+<li>优选IP或者域名<ol>
+<li>这些仅供参考：</li>
+<li>cdn-all.xn–b6gac.eu.org</li>
+<li>cdn.xn–b6gac.eu.org</li>
+<li>cdn-b100.xn–b6gac.eu.org</li>
+<li>edgetunnel.anycast.eu.org</li>
+<li>cdn.anycast.eu.org</li>
+</ol>
+</li>
+</ol>
+<h2 id="创建和编辑，为上述的3-4-5步"><a href="#创建和编辑，为上述的3-4-5步" class="headerlink" title="创建和编辑，为上述的3&#x2F;4&#x2F;5步"></a>创建和编辑，为上述的3&#x2F;4&#x2F;5步</h2><p>这里演示以代码1做案例<br>代码1链接<a href="(https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js">代码1</a><br>如图所示：<br><img src="https://pngs.xiaotaolive.club/%E4%BB%A3%E7%A0%81%E7%95%8C%E9%9D%A2.png" alt="代码1的复制界面"><br>复制粘贴到workers的编辑界面<br><img src="https://png1.xiaotaolive.cfd/%E7%B2%98%E8%B4%B4%E4%B9%8B%E5%90%8E%E5%A6%82%E5%9B%BE.png"><br>点击刚刚的 <strong>uuid在线生成</strong>，获取一个uuid，粘贴到代码uuid的位置<br>也要点击刚刚的 <strong>优选域名</strong>，任选一个填入IP的引号内（非必须）<br>点击部署即可</p>
+<h3 id="重点：一定要记住你的uuid，否则无法获取订阅"><a href="#重点：一定要记住你的uuid，否则无法获取订阅" class="headerlink" title="重点：一定要记住你的uuid，否则无法获取订阅"></a>重点：一定要记住你的uuid，否则无法获取订阅</h3><h2 id="完成了部署之后"><a href="#完成了部署之后" class="headerlink" title="完成了部署之后"></a>完成了部署之后</h2><h3 id="点击Workees-Pages，回到页面"><a href="#点击Workees-Pages，回到页面" class="headerlink" title="点击Workees Pages，回到页面"></a>点击<strong>Workees Pages</strong>，回到页面</h3><p>找到刚刚创建的名字为Teach的workers，点击进入<br><img src="https://pngs.xiaotaolive.club/workes.png"></p>
+<h3 id="点击设置-触发器-自定义域"><a href="#点击设置-触发器-自定义域" class="headerlink" title="点击设置-触发器-自定义域"></a>点击设置-触发器-自定义域</h3><p><img src="https://png1.xiaotaolive.cfd/%E8%AE%BE%E7%BD%AE.png" alt="界面"></p>
+<h3 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h3><p>点击后，输入你托管的域名，可以是二级域名<br>如你买的域名为<strong>A.com</strong>，那么二级域名可以写为：<strong>B.A.com</strong><br>我测试的域名为xtxtudy.xite，那么二级域名为daliy.xtstudy.xtie</p>
+<h2 id="获取订阅链接"><a href="#获取订阅链接" class="headerlink" title="获取订阅链接"></a>获取订阅链接</h2><p>由于刚刚你写好了 <strong>uuid和自定义域</strong>，获取链接时在浏览器输入：<strong>你的自定义域名&#x2F;uuid</strong>即可访问页面<br>复制VLESS开头的即可<br>如我的自定义域名是daily.xtstudy.site，uuid是1234<br>链接就是daily.xtstudy.site&#x2F;1234<br>你的链接也是同理，操作时注意即可</p>
+<h2 id="本期内容仅供学习交流，不做任何其他引导"><a href="#本期内容仅供学习交流，不做任何其他引导" class="headerlink" title="本期内容仅供学习交流，不做任何其他引导"></a>本期内容仅供学习交流，不做任何其他引导</h2><h2 id="作者邮箱：Crazy2403outlook-com"><a href="#作者邮箱：Crazy2403outlook-com" class="headerlink" title="作者邮箱：Crazy2403outlook.com"></a>作者邮箱：Crazy2403outlook.com</h2>]]></content>
+      <tags>
+        <tag>CF 域名 技术 学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂文论</title>
+    <url>/09/</url>
+    <content><![CDATA[<h1 id="思考：我对《喧哗的大多数》的理解"><a href="#思考：我对《喧哗的大多数》的理解" class="headerlink" title="思考：我对《喧哗的大多数》的理解"></a>思考：我对《喧哗的大多数》的理解</h1><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h3><ol>
+<li><h3 id="对于一本书的阅读感想"><a href="#对于一本书的阅读感想" class="headerlink" title="对于一本书的阅读感想"></a>对于一本书的阅读感想</h3></li>
+<li><h3 id="推荐阅读的理由"><a href="#推荐阅读的理由" class="headerlink" title="推荐阅读的理由"></a>推荐阅读的理由</h3></li>
+<li><h3 id="本文要探讨的内容"><a href="#本文要探讨的内容" class="headerlink" title="本文要探讨的内容"></a>本文要探讨的内容</h3></li>
+</ol>
+<p>	</p>
+<h3 id="2-思考与我们所处的环境"><a href="#2-思考与我们所处的环境" class="headerlink" title="2.思考与我们所处的环境"></a>2.思考与我们所处的环境</h3><ol>
+<li>思考的开始</li>
+<li>小结</li>
+</ol>
+<h1 id="1-简介-1"><a href="#1-简介-1" class="headerlink" title="1.简介"></a>1.简介</h1><h2 id="本文为阅读《喧哗的大多数》后的感想"><a href="#本文为阅读《喧哗的大多数》后的感想" class="headerlink" title="本文为阅读《喧哗的大多数》后的感想"></a>本文为阅读《喧哗的大多数》后的感想</h2><p>《喧哗的大多数》是我初次阅读的一本书，对当时我兴趣的一个议题给出了提问：“为什么当代的互联网，喷子，争吵，骂战会如此泛滥呢？”</p>
+<p>《喧哗的大多数》后文我会以“本书”称呼，来方便阅读</p>
+<p>本书中引用了诸多现实材料来论述作者提出的社会现象和思考之间的关系，详细探讨了20世纪中后期美国南部郊区的政治和社会动态，特别关注了“沉默的大多数”这一概念在政治中的作用和影响</p>
+<h2 id="推荐阅读的理由-1"><a href="#推荐阅读的理由-1" class="headerlink" title="推荐阅读的理由"></a>推荐阅读的理由</h2><p>《喧哗的大多数》对于初次接触这本书的读者来说，有以下推荐理由</p>
+<h3 id="1-论据充实，逻辑性强，细节丰富"><a href="#1-论据充实，逻辑性强，细节丰富" class="headerlink" title="1. 论据充实，逻辑性强，细节丰富"></a>1. <strong>论据充实，逻辑性强，细节丰富</strong></h3><ul>
+<li><strong>学术性强</strong>：这本书是一本学术著作，包含大量的历史细节和分析。拉索的写作风格较为严谨，充满学术术语和理论分析，可能需要读者具备一定的历史和政治知识背景。</li>
+<li><strong>细节丰富</strong>：书中包含了大量的历史事实、数据和案例研究，读者需要耐心阅读和理解。</li>
+</ul>
+<h3 id="2-主题的吸引力"><a href="#2-主题的吸引力" class="headerlink" title="2. 主题的吸引力"></a>2. <strong>主题的吸引力</strong></h3><ul>
+<li><strong>政治与社会研究</strong>：对于对美国政治、历史和社会变迁感兴趣的读者，这本书提供了深刻的见解和详细的分析。</li>
+<li><strong>独特的研究视角</strong>：书中对南部郊区政治的详细研究提供了一个较为独特的视角，帮助读者理解美国政治的一些关键转变。</li>
+</ul>
+<h3 id="3-丰富的案例，信息以及论述"><a href="#3-丰富的案例，信息以及论述" class="headerlink" title="3. 丰富的案例，信息以及论述"></a>3. <strong>丰富的案例，信息以及论述</strong></h3><ul>
+<li><strong>信息量大</strong>：书中信息量大，涉及的历史事件、人物和背景知识繁多，可能需要读者多次阅读才能完全理解。</li>
+<li><strong>理论和分析</strong>：拉索的分析较为深入，读者需要花费时间来理解其理论框架和论点。</li>
+</ul>
+<h3 id="4-结构和布局"><a href="#4-结构和布局" class="headerlink" title="4. 结构和布局"></a>4. <strong>结构和布局</strong></h3><ul>
+<li><strong>章节分明</strong>：书的章节结构清晰，每一部分都有明确的主题和论点。读者可以按章节分段阅读，逐步消化内容。</li>
+<li><strong>引用和参考文献</strong>：书中引用了大量的文献和资料，读者可以通过参考这些文献进一步了解相关研究。</li>
+</ul>
+<h3 id="5-潜在的学习收益"><a href="#5-潜在的学习收益" class="headerlink" title="5. 潜在的学习收益"></a>5. <strong>潜在的学习收益</strong></h3><ul>
+<li><strong>了解美国现代政治史</strong>：通过阅读这本书，读者可以对20世纪中后期美国南部郊区的政治和社会变迁有深入的了解。</li>
+<li><strong>认识“沉默的大多数”</strong>：书中对“沉默的大多数”这一概念的详细阐述和分析，可以帮助读者理解其在美国政治中的重要性和影响。</li>
+<li><strong>培养学术阅读能力</strong>：阅读这本书可以提升读者的学术阅读能力，增强对复杂历史和政治问题的分析和理解能力。</li>
+</ul>
+<h2 id="本文要探讨的"><a href="#本文要探讨的" class="headerlink" title="本文要探讨的"></a>本文要探讨的</h2><p>在刚刚的第一章第二部分，已经为大家介绍了本书的一些信息，推荐阅读的理由之后，我们就顺着接下来的思路来开始本文的总结吧</p>
+<p>本文计划从以下几点入手撰写：</p>
+<ol>
+<li>思考与我们所处的环境</li>
+</ol>
+<p>那么废话不多说，我们试着开始围绕我要入手的点开始我们的论文吧</p>
+<h1 id="2：思考与我们所处的环境"><a href="#2：思考与我们所处的环境" class="headerlink" title="2：思考与我们所处的环境"></a>2：思考与我们所处的环境</h1><h2 id="思考的开始"><a href="#思考的开始" class="headerlink" title="思考的开始"></a>思考的开始</h2><p>人是社会的一部分，我们都生活在一个充满社交和舆论的现实环境里面，在这里，你会接触各种信息，各种事件，获得不同的情绪，引起围绕这些人物，事件，情绪乃至细微之处的思考</p>
+<p>但在如今信息爆炸的环境下，快速的处理信息就成为了我们要做的一件事，而我们经由社交，形成了群体；经过某些明星，形成了由互联网个体组成的群体：idol和粉丝；在某条短视频下，因相似的观点，情绪引起的共鸣，形成了网络的社交，他们扩大了我们的世界，也在影响着我们的思考</p>
+<h3 id="一个案例"><a href="#一个案例" class="headerlink" title="一个案例"></a>一个案例</h3><p>就像我们和彼此的恋人商量关于某个手机的购买时一样，可能一方是对这个行业颇为了解的人，他会去<strong>思考CPU型号</strong>，<strong>价格是否便宜</strong>，<strong>性能等指标</strong>，去<strong>解释一个问题</strong>：<strong>值不值得买？她的性价比在哪里</strong>？</p>
+<p>而另一方可能会说，这一款或那一款的外观是很好的，如<strong>天圆地方镜头</strong>，<strong>刘海屏</strong>，<strong>挖空屏</strong>等外观，或者某一些和抽象符号挂钩的品牌，如<strong>苹果</strong>，<strong>华为</strong>等，这些人不会在意性能的好坏，对他们来说，手机只是一个符号，或者物品，是一种符号的体现，是某些口号的具象化的体现</p>
+<p>我们发现，双方围绕思考的两个方面在进行着自己的思考，一方想到的是思考的过程，提供分析他所拥有或者查询的信息，如：A的CPU具备<strong>低功耗，长续航，且不失性能的特点</strong>，B的<strong>电池具备大容量，充电速度快，屏幕清晰度更高</strong>等分析产品A和B中更适合自己的一方。这是一个思考的过程，结论是次之的</p>
+<p>而另一方，发现了手机所代表的符号，如<strong>爱国，精致的外观，x产，</strong>这些是购买手机行为带来的结果，通过购买手机的支出，换取一个在互联网上，社交中的头衔，称号，来彰显自己的某些方面。</p>
+<p>通过思考这件事的结果，来反向去思考买手机的问题，交流中的一方这样的思考模式，以单一或多个最终结果的标签为自己的导向，就导致了双方矛盾的产生。</p>
+<p>这也是思考的一个开始，究竟要为了本质的问题：买手机为了实用，还是思考的结果：买手机的获利呢？</p>
+<p>以上只是一个简单的案例，对于一个手机的购买，只是我们生活中很平常的事情，并无太多的复杂可言，可能当我们参考的数据，测评等各类信息的积累到达一定的地步，这些问题即可迎刃而解。只是需要我们付出一定的时间去仔细地思考即可，只要仔细的思考，我们就可以跳出一些不该有的标签的束缚，去真正发现思考的要素，即我们所需的，产品所具备的，以及符号之外，我们真正需要的部分</p>
+<h3 id="倾听和快速思考"><a href="#倾听和快速思考" class="headerlink" title="倾听和快速思考"></a>倾听和快速思考</h3><blockquote>
+<p>心理学大师丹尼尔·卡尼曼将他对认知偏差毕生的研究成 果融入了著作《思考，快与慢》中。他在书的末尾提出了一个非常重 要的问题：我们该如何应对偏差和误区？我们怎样才能提高判断和决 策的准确性，无论是我们自己的，还是那些我们为之服务或服务于我们的机构的？</p>
+</blockquote>
+<p>根据前文的论述，如果我们只是通过简单的符号，来区分和混淆我们真正需要的，产品所具有的符号之外的内容，我们就陷入了一个怪圈，即符号化的思考，可能会引起对一些问题过分的思考，做出欠妥的选择，正如书中所说</p>
+<blockquote>
+<p>在我 们的思维装置中，有相当一部分，也就是产生直觉的那一部分，“并不 是那么容易改变的。年龄的增长可能会起到一些作用，但除此之外， 我们能做的不多。现如今我的直觉思维还总是让我陷入过度的自信、 极端的推测和预估的偏差中，就像我在研究这些问题之前所表现的那 样”</p>
+</blockquote>
+<p>但是由于我们的一些本能，人总是喜欢寻找前文所说的同类，以及现在所说自己喜欢的东西，观点来建立共同的情绪联系，并本能的抵触一部分在此之外的内容</p>
+<p>正如手机的各类标签一样，我们也带着各种各样的标签生活中世界上，标签可以帮我们快速的区分一个东西，一类人，一件事对于自己的价值，即思考的结果。通过思考这件事（包括去做）会得到的内容</p>
+<p>由前文可知，这是思考的结果导向，我们通过这样的思考方式，很容易的区分了某些事情对于自己的收益，哪怕买来的手机，得到的东西只存在于虚幻的世界，我们也会倍感满足</p>
+<p>包括作者本人，也会比较直觉的认为，一个人的好坏是由于她的分数高低来区分的，实际上则不然，也正是这样的“高低分”标签，快速的把我们要分析的目标简单的定义了一个结果，就像程序里“X&#x3D;1”那般简单，如果真的那样，就大错特错了</p>
+<blockquote>
+<p>我尤其想要声明的是，如 果我们认为思考的主要任务是“克服认知偏差”，那就误入歧途了。在我 看来，我们需要解决的最根本的问题，是如何获得思考的意志——我 们总在坚定地逃避思考，并为此付出了沉重的代价。没有几个人想要 真正思考，思考让我们负累，思考使我们厌倦，思考会迫使我们远离 熟悉舒适的习惯，思考会让我们的生活变得更复杂。在与钦佩、喜爱 或想要追随的人交往时，思考会使我们与对方产生分歧，或者至少使 彼此的关系扑朔迷离。</p>
+</blockquote>
+<p>依旧是关于前文，购买手机的案例，我们会发现，无论是结果导向，还是过程导向，这两类人以各自的标签混迹于互联网的广阔世界里，宣扬着各自的产品，如代表最新崛起的华为Mate60系列，昔日主打性价比三字的xiaomi，或是近期中端机市场的redmi和iqoo一样，每一类人，她首先归属于这个品牌象征的内容里，其次属于和你交流的对象</p>
+<p>也正因如此，骂战，争论在前段的交流过程中是一定会发生的。如果你经常观看互联网的帖子，你会发现各大品牌之间的骂战，互撕如我们喝水吃饭一样平常，如抓住某些事情不放的论述某品牌的某些方面，或者某品牌在网上的劣迹行为，这些都成了双方：无论结果导向还是过程导向的两类人的茶后甜点</p>
+<p>这个过程中，认知的偏差也在潜移默化下影响着我们的思考，可能交流没有开始，你便快速的用标签将代表这个标签的人直接抹掉，即拉黑，屏蔽了。可者并不是真正的思考，这只是粗暴的消灭了不同的声音后，自我舒适的表现，因为细致的思考会让你身心俱疲</p>
+<p>你要考虑你键盘打出的每一个字，是否会引起某些人的应激，某些人的喜爱，狂热，或是谩骂，或者被不知名的原因毁掉整篇文章。由于这种担心的影响，你会看到在你整理信息时，各类收钱办事的宣传，测评视频，混淆视听，扬长无短，虚假宣传等，这便是我们每个人都有的舒适区，我们不会轻易的跳出这里，去让自己难受</p>
+<p>这也影响了我们的交流，我们可能会互相谩骂，昔日的好友会变成敌人，昔日的敌人也可能裂痕更加深刻，也许敌人的敌人会变成朋友</p>
+<h3 id="舆论的影响"><a href="#舆论的影响" class="headerlink" title="舆论的影响"></a>舆论的影响</h3><p>通过 <strong>倾听和快速思考</strong>的论述，也就是前文，我们继续向下，探讨舆论和情绪的内容</p>
+<blockquote>
+<p>罗宾逊在1994年的文章《清教徒与正经人》中，就很多人对清教 徒（这个词现在说出来可能更多是一种侮辱 [4]）的轻蔑态度提出了质 疑，并对清教徒所持有的想法以及他们为什么会持有这些想法给予了 更为充分和准确的阐述。在写作文章中，她发现：“我们谈论和评价清 教徒的方式，恰恰展现了我们眼中清教徒的重要特征。”也就是说，人 们在谈论清教徒时所持有的态度，正吻合了我们贴给清教徒的标签 ——僵化死板，思想狭隘，愤世嫉俗。</p>
+</blockquote>
+<p>前文我们也提到了，我们在快速思考时，会用标签快读的区分涉及到要思考的内容，如人，物，事件，根据印象中的标签归类，有选择的拿掉自己舒适的部分，拉黑，屏蔽不喜欢的不舒适的部分</p>
+<p>渐渐的我们对待这些和我们意识上的所谓<strong>敌对者</strong>时，也会用敌对者敌对我们的办法去对待敌对者，如敌对者喜欢前文所说，xiaomi的某些黑料，去攻击敌对者所说huawei低价高配一样，这些事件经过庞大的网络自媒体，短视频，微博之中的引导，发酵，多次反转，变成了很多人眼中的唯一标签，乃至提到王者荣耀，你的父母就会想起这是你低分的主要原因，提到电脑，手机，就是耽误学习的毒瘤一样；事实上，这些事情的内在都是一致的，即标签带来的快速思考导致的一种弊端</p>
+<blockquote>
+<p>罗宾逊写道，“我们总是有一种集体性狂热，想要 贬损一件我们并不完全了解的事物，只因为我们知道这是被社会所认 可的。这种认知让我们乐在其中，对清教徒的评价就是一个典型的例 子。</p>
+</blockquote>
+<p>如前文所说，由于一个明显&#x2F;idol的存在，我们围绕这个明星便形成了不同标签下的群体，每个群体都有自己热衷于做的事情，就像当年蔡徐坤火遍全网的时候，b站围绕她的鬼畜大量增加，达到了反制官媒的地步；这些人自称是IKUN，和另一群粉丝开始了很多的QQ群战争，大量的散播表情包等，在那段时间成为了很多人的快乐之源</p>
+<p>结合引用的段落，无论我们是不是真心要贬损，或是褒奖一个事物，在我们可能并不熟悉的时候，我们可能就已经慢慢的被这些所影响，习惯了这些内容的存在，本能的敌意也变成了接受，进而以此为乐</p>
+<p>随着时间推移，这些事情逐渐的被更多的人认可，逐渐形成了网络上的群体，他们高举ikun的旗帜开始发送视频，借以取乐的时候，我们也习惯了乐在其中，拿出类似的表情包，作为一种独特的身份证，寻找新的朋友们，即印证了以下的引用（基于引用的案例）</p>
+<blockquote>
+<p>也就是说，我们之所以指责清教徒，是因为我们知道我们交谈的 对象对清教徒群体持有与我们相同的观点，而且很乐意听我们提起这 个话题。至于我们所说的话与清教徒实际的行为和信仰是否真的有 关，这并不重要。用什么词都没关系，也不具备任何效力，它倒更像 是一句加入某个组织或俱乐部的暗语。</p>
+</blockquote>
+<p>所以，当我们习惯了这样的茶余饭后的乐趣，我们是不是所谓的“黑子”，“真爱粉，真ikun”已然不再重要，重要的是这是我们社交的一个暗语，就像网上的那句话：我叫ikun你记住，或者鸡你太美一样，是一个我们互相认同的符号，而蔡徐坤的存在，仅仅是维护这些符号，供不论以此为乐，或以此为战的人进行他们热衷的行为罢了，仅此而已</p>
+<blockquote>
+<p>这种寻求认同的本能在我们这个时代被放大和强化，因为我们每 天都被淹没在疯狂的信息洪流中，尽管这些信息往往是无稽之谈。再次重申，这并非什么新鲜事。</p>
+</blockquote>
+<p>这里也要提到一些八卦类消息，尽管他们真真假假，假假真真，如我们发现的一些互联网高潮现象，自我意淫等，都是以下论述中的结果</p>
+<blockquote>
+<p>“当有那么多事情需 要了解的时候，当同样的词在这么多知识领域中被赋予了不同含义的 时候，当每个人都对很多事情一知半解的时候，谁都很难判断他是否 知道自己在说些什么。”在这种情况下，请让我把重点放在艾略特的结 论上——“当我们不知道，或者当我们知道得还不够多的时候，我们总 [6] 是倾向于以情感来代替思考”。</p>
+</blockquote>
+<p>这段引用，结合前文提到的，我们通过一个明显，如蔡徐坤建立了粉丝，黑粉，ikun等等之间的联系，随后我们就有了共同群体之间的交流，而运行这些明星的团队也好，公司也好，或是资本也罢，为了运营这些围绕明星这个巨大的符号而凝聚在一起的小符号，就会开始放出八卦，各种各样真真假假的八卦</p>
+<p>这些八卦经过各类无良媒体，营销号的喇叭，传到你耳朵里已经变得五花八门，引起你情绪的共鸣，如看到蔡徐坤反杀官媒，你很兴奋，看到蔡徐坤击你胎没，你坐在原地吃瓜，看到蔡徐坤跳舞你会哈哈大笑，你不会刻意的去钻研大多数的事实，或者细节，因为你只是一个吃瓜群众，于是如论证所说，当带入情绪之后，奇怪的评论就出现了‘</p>
+<p>上文所说，意淫，高潮，刷屏，控评，刷屏等衍生的行为也产生了，可以理解为这是一定程度上情感思考问题导致的结果，即表现对于这个明星的某些感情，以满足自己的一些幻想，如妈妈粉，女友粉这些千奇百怪的标签群体，可能也有类似的功能</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>通过刚刚的长篇大论，我们已经初步的了解了思考的开始，结合我所说的案例，了解了倾听和快速思考，舆论的影响，那么回到我们这一部分总的标题上，<strong>思考与我们所处的环境</strong>。我们一起来做个总结吧</p>
+<h3 id="当下的环境"><a href="#当下的环境" class="headerlink" title="当下的环境"></a>当下的环境</h3><p>不论当下的全球，国内，都已经普及了智能手机，快手，抖音，YouTube等媒体；五花八门的文化顺着那神奇的一根线，和路由器走进了我们的生活，我们看到了如今围绕各自符号形成的海量信息：我们看到了世界上的领导换届下台，上下内斗，资本争锋，女权林立；也看到了国家崛起，民族复兴等各种各样的视频，文章，博客</p>
+<p>在这信息爆炸的时代，我们也通过很多方式思考一些问题，进行社交，发现更多的信息，在真真假假的信息流中建立着自己的思考</p>
+<h3 id="思考，和拒绝思考"><a href="#思考，和拒绝思考" class="headerlink" title="思考，和拒绝思考"></a>思考，和拒绝思考</h3><p>为什么会这样写标题呢？因为我们生在一个需要我们思考，又不需要我们思考的时代，需要思考，是为了非自己的思考，为宏大的内容思考，而非为自己成为一个真正的思考者；不需要思考，是因为如果你真的通过上述案例或书中的案例的分析与灵活运用产生了不必要的质变，就会迎接已经为你准备好的拒绝思考手段</p>
+<p>在后续的论述中，我会逐步的列出在如今信息爆炸，快手抖音横行的时代，这些因素是如何影响我们的思考，从而让思考变得碎片，打倒拒绝思考的目的，在这里，我们在论到当前形势的时候，就可以稍作停歇了，这里只做原因的介绍</p>
+<p>因为这样的做法是符合政治的需要，符合意识形态需要的，是治国者为了实现某些目的所采取的一些手段，有利于她所设计的政治结构的稳定，继而有了我们所熟知的长治久安这个词</p>
+]]></content>
+      <tags>
+        <tag>杂文 论述</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>免费的云开发平台</title>
     <url>/06/</url>
     <content><![CDATA[<h1 id="GitHub免费开发平台"><a href="#GitHub免费开发平台" class="headerlink" title="GitHub免费开发平台"></a>GitHub免费开发平台</h1><p><strong>免费的GitHub开发平台</strong>：<a href="https://github.com/features/codespaces">GitHubCodeSpace</a></p>
@@ -529,106 +638,6 @@ M3U8的用途：在线播放： 主要用于指导流媒体播放器如何播放
 ]]></content>
       <tags>
         <tag>技术 生活 ChatGPT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>赵紫阳文集阅读1-2</title>
-    <url>/06/</url>
-    <content><![CDATA[<h1 id="《研究新情况，全面贯彻调整的方针》1-2"><a href="#《研究新情况，全面贯彻调整的方针》1-2" class="headerlink" title="《研究新情况，全面贯彻调整的方针》1-2"></a>《研究新情况，全面贯彻调整的方针》1-2</h1><h2 id="关于商业问题"><a href="#关于商业问题" class="headerlink" title="关于商业问题"></a>关于商业问题</h2><h3 id="当下的问题"><a href="#当下的问题" class="headerlink" title="当下的问题"></a>当下的问题</h3><p>流通环节问题，工商关系问题，农业收购，推销问题。除工农业外，也应该抓好商业，解决流通领域问题</p>
-<span id="more"></span>
-
-<blockquote>
-<p>现在，流通环节的问题相当多，工业方面有个工商关系问题，农业方面也有个收购、推销问题。除抓工业、农业外，各级党委应当关心商业，抓商业，解决流通领域的问题。商业问题里面，一方面是商业本身有些问题，商业部门应当好好改进自己的工作；但另一方面商业确实也有很多问题需要地方党委帮助它解决。</p>
-</blockquote>
-<h3 id="第一个问题"><a href="#第一个问题" class="headerlink" title="第一个问题"></a>第一个问题</h3><p>要有计划的进行商业体制改革，商业活不了，工农业就活不了</p>
-<p>流通环节的改革要有步骤的计划，太猛会导致价格波动，要沿用1975年的办法</p>
-<blockquote>
-<p>第一个问题是商业体制必须改革。但是改革只能有步骤地进行，改得太猛也容易引起物价波动等问题。大体上要恢复一九五七年的办法，有些容易恢复，有些一下恢复不了，要有步骤、有计划地恢复。体制不改，商业活不了。</p>
-</blockquote>
-<h3 id="第二个问题"><a href="#第二个问题" class="headerlink" title="第二个问题"></a>第二个问题</h3><p>要加强基础的商业设施的建设，如仓库，冷冻设备等。如果不发展这些商业设施，生成发展的才好，由于不能及时的储藏和收购，会造成极大的浪费。要想办法在财政中留取部分用于后续的建设，和还款</p>
-<blockquote>
-<p>第二个问题就是要加强商业设施的建设。商业设施，如仓库、冷冻设备、冷藏车这些东西跟不上，这也是目前我们经济工作中的一个很突出的薄弱环节。我们现在搞调整，也要包括解决这一方面的问题。现在仓库、冷冻、冷藏车等设施不足，还是以前那个状况，你再发展生产，发展越多，由于不能及时收购和贮藏，浪费越大，多少年来由于商业设施跟不上，造成的浪费不知有多大。农产品发展起来，特别是鲜活商品多起来了，你不搞冷库、冷藏车这些设备，商业部门就没有办法，就不收购，你再责备也不行，这是个迫切要求解决的问题。今年起，我们各级都要拿一点钱搞商业设施。财政上还要进一步研究怎么给商业系统规定一点灵活的政策，解决投资问题。如从利润中留点成，或者可以先预支点钱，设施先搞起来，建好了以后再还。</p>
-</blockquote>
-<h2 id="关于调整问题"><a href="#关于调整问题" class="headerlink" title="关于调整问题"></a>关于调整问题</h2><h3 id="总结以上的内容"><a href="#总结以上的内容" class="headerlink" title="总结以上的内容"></a>总结以上的内容</h3><p>《研究新情况，全面贯彻调整的方针》1-1：<a href="%E3%80%8A%E7%A0%94%E7%A9%B6%E6%96%B0%E6%83%85%E5%86%B5%EF%BC%8C%E5%85%A8%E9%9D%A2%E8%B4%AF%E5%BD%BB%E8%B0%83%E6%95%B4%E7%9A%84%E6%96%B9%E9%92%88%E3%80%8B1">笔记链接</a></p>
-<p>以上的问题都在三年调整的总题目中，要全面贯彻调整的方针，要清楚过去错误的点（1），明确当下关键的点（2）</p>
-<blockquote>
-<ol>
-<li></li>
-</ol>
-<p>过去经济工作中矛盾的焦点，是基本建设战线过长，投资过多，挤了农业，挤了轻工业，挤了人民生活</p>
-</blockquote>
-<blockquote>
-<p>2</p>
-<p>调整的关键是要压积累，下基建，加强薄弱环节。在这个问题上，要下最大的决心，不能小调，要大调，要从国民经济发展的全局出发，压缩长线，加强短线。剃平头不能达到调整的目的。越是财力小，越要集中投资，保证重点，打好歼灭战。</p>
-</blockquote>
-<p>调整不是简单的压基建，而是引起一场变革。因为它牵涉到社会的方方面面，基建规模缩小后，会引起一系列的问题，从而暴露过去掩盖的问题</p>
-<p>现在是形势逼人，非改不可。要正确认识调整中的新形势，不要只看到困难的一面，也要看到着大好时机，才能明确应该怎么做（3），才能把我们要做的做好</p>
-<blockquote>
-<p>3</p>
-<p>我们要正确认识调整中出现的新形势，不能只看到调整带来的困难的一面，也要看到这正是工业进行改造的大好时机，实行市场调节的大好时机，进行计划、物资等管理体制改革的大好时机。我们要因势利导，趁热打铁，抓住调整这个中心环节，并把它同改革、整顿、提高有机地结合起来，逐步建立起国民经济各部门之间比较合理的比例关系。现在的问题是，我们的思想还跟不上，在很多问题上，思想还没有和调整的方针一致起来。我们必须自觉地按照调整的方针去考虑问题，观察形势，安排工作，该上的上，该下的下，齐心协力把经济调整这一仗打好。</p>
-</blockquote>
-<h1 id="《研究新问题-把经济改革搞好》1-1"><a href="#《研究新问题-把经济改革搞好》1-1" class="headerlink" title="《研究新问题　把经济改革搞好》1-1"></a>《研究新问题　把经济改革搞好》1-1</h1><h2 id="四川问题的第一个方面"><a href="#四川问题的第一个方面" class="headerlink" title="四川问题的第一个方面"></a>四川问题的第一个方面</h2><h3 id="当下的矛盾1"><a href="#当下的矛盾1" class="headerlink" title="当下的矛盾1"></a>当下的矛盾1</h3><p>当下的矛盾为，已经初步进行的改革和尚未改革的经济体制和现行规章制度的矛盾。要进一步的改革，改革整个经济体制，在处于调整时期的当下，尚不具备大规模的改革条件，可能由于大改出现各种问题，因此要在当下的条件下多想些办法（4）</p>
-<blockquote>
-<p>4</p>
-<p>一个方面的问题，基本上属于已经进行的初步改革，同尚未改革的整个经济体制、现行规章制度之间的矛盾，也就是通过改革解放出来的生产力，同现在的生产关系中某些方面的矛盾，同上层建筑中某些环节的矛盾。这方面的问题是主要的、大量的。解决这一问题的根本出路，是要进一步地改革，也就是要改革整个经济体制。但目前处于调整时期，进行大改大革的条件还不具备，经验不足，如果看得不准，改得不好，反会引起大的波动，因此不能骤然进行大改大革。但是，也不能对新出现的情况和问题，漠然置之，不去解决。在不能进行大改的情况下，我们必须从现实出发，在领导上、工作上、政策制度上多想办法，积极地解决这些矛盾。</p>
-</blockquote>
-<h3 id="当下的矛盾2"><a href="#当下的矛盾2" class="headerlink" title="当下的矛盾2"></a>当下的矛盾2</h3><p>我们扩大了企业的经营自主权后，出现了一些歪门邪道，投机倒把的行为，这时另外一种性质的问题，并不是改革本身带来的，但我们一方面要扩大下边的权力，搞活经济；另一方面也要做好监督和检查工作，执行纪律和立法工作，严格根据规章制度办事，依法办事，来解决这些问题（5）</p>
-<blockquote>
-<p>5</p>
-<p>另一个方面的问题，就是企业扩大自主权、经济搞活以后，也会出现一些不正当的作法，搞歪门邪道。比如投机倒把，牟取暴利，损公肥私，损人利己，弄虚作假，挖国家墙脚，以邻为壑等等。这些是属于另外一种性质的问题，并不是改革本身带来的，但也是改革中间我们的工作要跟上去的问题。我们一方面要扩大下边的权力，把经济搞活；另一方面监督和检查工作要跟上去，执行纪律和经济立法工作要跟上去，符合规定的不要干涉，违反规定的及时制止。否则就会给某些人以可乘之机。只要加强领导，采取监督、检查、限制的有力措施，这个问题是可以解决的。</p>
-</blockquote>
-<h3 id="对四川初步改革的总结"><a href="#对四川初步改革的总结" class="headerlink" title="对四川初步改革的总结"></a>对四川初步改革的总结</h3><p>首先，改革出现了新的矛盾，新的问题，要提上日程。四川的改革试点早，出现问题和矛盾也早，要加强调查指导，解决新的问题和矛盾。要杜绝试点顺利的观点，情况约好的时候，越容易掉以轻心，当下未对经济体制进行变动的情况下，自下而上的改革问题多，牵扯多，解决的欠妥，就难以前进。</p>
-<p>所以，就四川的情况来看，有很多新问题，要去研究和解决，四川改革的早一些，有责任继续提供经验（6）</p>
-<blockquote>
-<p>6</p>
-<p>我们要研究解决经济搞活以后出现的新矛盾、新问题，必须把它提到议事日程上来。四川的改革试点比较早，出现矛盾和问题也比较早，要使改革健康地发展，必须加强调查研究和具体指导，解决新的矛盾和问题。我们绝不要以为试点比较顺利，总的情况好，就掉以轻心。要知道，改革不进则退。我们是在总的体制没有变动的情况下，自下而上改革的，各方面矛盾很多，牵扯很大，如果不解决新矛盾，就前进不了，甚至已经改了的也巩固不住。所以，从四川改革的情况来看，有一大批新问题，推着我们去研究、去解决。从全国来看，各省都在试点，四川改得早一点，有责任继续提供这方面的经验。</p>
-</blockquote>
-<p>四川的改革，首先是全国广度最大的，经济改革牵一发动全身，带来很多连锁反应，如果我们妥善的解决这些问题，就能为将来积累宝贵的经验。我们一定要有坚定性，长期搞下去，但脚步要稳，从以下方面入手（7）</p>
-<blockquote>
-<p>7</p>
-<p>对于改革和经济搞活以后出现的问题，一方面不要不知所措，重复过去那种“一放就乱，一乱就收，一收就死”的教训，不能一有风吹草动，就犹豫徘徊，走回头路。另一方面，要注意加强领导，深入调查，精心研究，具体分析，因势利导，及时解决前进中出现的问题，在解决问题中不断前进，不要放任自流。</p>
-</blockquote>
-<p>这是一个很好的学习机会，是完成四化建设的一个大问题，有关部门要加强具体指导，要钻研他，学会他（8）</p>
-<blockquote>
-<p>8</p>
-<p>各级党委不要局限在一个地区、一个单位，要从整个经济改革的角度，从全局、从长远来多想一些问题。省委准备以省社会科学院经济研究所为主，结合实际工作的有关部门和理论工作者，搞一个研究机构，集中力量，从理论与实践的结合上去研究改革中的新问题，摸索运动的规律，及时提出方案和对策。</p>
-</blockquote>
-<h2 id="改革中的问题"><a href="#改革中的问题" class="headerlink" title="改革中的问题"></a>改革中的问题</h2><h3 id="自有资金的问题"><a href="#自有资金的问题" class="headerlink" title="自有资金的问题"></a>自有资金的问题</h3><p>对企业经营自主权扩大后，资金增多的问题，首先这是一个较大的数字，在当下国家财政困难的情况下，企业的前要比过去多，从国家角度，要承认他们的利益，所有权，不去征收。但也要加强指导，避免盲目性，不可放手不管，发挥经济的收益，是值得研究的问题</p>
-<h3 id="扩大再生产问题"><a href="#扩大再生产问题" class="headerlink" title="扩大再生产问题"></a>扩大再生产问题</h3><p>企业的自主权扩大了，改革深入了，他们有了资金，就会扩大再生产，要解决如下的问题（9）</p>
-<blockquote>
-<p>9</p>
-<p>第一，在一个行业或一个企业内，研究定出一个合理的内部价格，作为计算利润留成和奖励的依据。上海纺织工业局就是这样搞的。但是，也不要调整得太多、太猛。我们政策的出发点，主要应当考虑直接生产者、直接经营者的积极性。在全行业内部，拉得很平也不行。第二，调整工商利润。第三，从税收上进行调节，有的要减点税，有的要加点税，如资源税、资产税，甚至可以加征企业基金所得税。第四，在企业利润留成比例上区别对待。总之，这个问题要逐步解决，不能急，不能搞平均主义，要注意保护搞得好的企业的利益，要稳步寻找一些解决苦乐不均的妥善办法。</p>
-</blockquote>
-<h3 id="市场调节问题"><a href="#市场调节问题" class="headerlink" title="市场调节问题"></a>市场调节问题</h3><p>在扩大企业的经营自主权，实行市场体制后，要注意计划指导（10），克服生产经营的盲目性。</p>
-<blockquote>
-<p>10</p>
-<p>但也带来一个问题，什么商品短缺利润高，就一拥而上都去搞，以致重复生产，造成浪费。经济领导机关要搞好调查研究，加强市场的预测预报，给企业以指导。在销售方面过去是采购人员满天飞，现在是推销人员满天飞。在一个时期内，对于打开销路，建立经济联系，有它的积极作用。但也要进行指导，采取一些措施，如设货栈、生产资料交易中心、委托代销等，建立经常的渠道，逐步改变推销人员满天飞的状况。</p>
-</blockquote>
-<h3 id="扩大自主权与专业化改组结合的问题"><a href="#扩大自主权与专业化改组结合的问题" class="headerlink" title="扩大自主权与专业化改组结合的问题"></a>扩大自主权与专业化改组结合的问题</h3><p>专业化改组是经济的必然需求，非改不可，过去办法（11）创办的公司，看来是不成功的。搞公司，要从生产需要取法，不要把起初所有的人力财务，各个环节都管理起来，可以搞松散一些，由低到高的发展</p>
-<blockquote>
-<p>11</p>
-<p>过去用行政的办法搞专业公司，看来不成功。上海以一个中心企业为主，把周围同行的小厂联合起来，搞专业化改组，重庆也开始这么搞了，这个办法看来是好的。搞公司，一定要从生产需要出发，不能一开始就搞全能的，把人财物、供产销都管起来。开始可以搞松散的公司，逐步由低级向高级发展。</p>
-</blockquote>
-<h3 id="发挥大城市作用的问题"><a href="#发挥大城市作用的问题" class="headerlink" title="发挥大城市作用的问题"></a>发挥大城市作用的问题</h3><p>要根据扩大自主权后，按经济的内在联系组织商品的生产和流通，要研究如何发挥中心城市的作用、</p>
-<p>要发现哪里出劳力，哪里出资源，共同办厂，或跨省的公司，采取一些方法（12）合理分配经营所得，用这种办法在大中小城市之间，甚至更深一级的行政区域之间简历紧急联系</p>
-<blockquote>
-<p>12</p>
-<p>企业扩大自主权后，有了自己的经济利益，相关的企业就有共同的需要和共同的利益，就要求发展经济联系，要因势利导，建立大城市企业与外地的企业横向的经济联系。组织专业公司，也要建立在企业之间经济联系的基础上，打破条条、块块分割的状况</p>
-</blockquote>
-<h3 id="奖金问题"><a href="#奖金问题" class="headerlink" title="奖金问题"></a>奖金问题</h3><p>要符合政策规定，体现按劳分配精神，杜绝滥发，要检查问题，改正问题，根本的问题要做到国家，集体，个人的利益兼顾（13），必须要坚持按劳分配的原则</p>
-<blockquote>
-<p>13</p>
-<p>凡是符合政策规定，体现了按劳分配，推动了生产的，都要肯定。现在有的单位滥发奖金，主要是违背政策规定，巧立名目，或者是搞平均主义，这些都不能体现按劳分配，不能促进生产发展，要认真检查，坚决改正。根本的问题，还是要做到国家、集体、个人利益的兼顾，保证国家多得。奖金的发放，必须坚持按劳分配的原则。今年四川试点的企业，继续按照省里规定的办法去办。对于那些滥发奖金，搞歪门邪道，挖国家墙脚的，要进行调查，如果发得不合理，要坚决退回。现在有的单位搞生财之道，不搞正道，而是搞歪门邪道，要抓住最突出的，从严惩处。这需要进行长期的斗争。最怕的是不加分析，眉毛胡子一把抓，一说纠正滥发奖金，连正当的奖励也不让搞了；一说要肯定奖金的作用，连最糟糕的滥发现象也不查了。</p>
-</blockquote>
-<h2 id="总的来说"><a href="#总的来说" class="headerlink" title="总的来说"></a>总的来说</h2><p>一要搞活经济，二要贯彻纪律，越是经济搞活了，越要坚持贯彻纪律，要承认企业的经济利益，且这并不可怕，也不奇怪</p>
-<p>只有这样，企业才有了内在的积极性，能动性。领导机关要妥善运用经济杠杆，采取经济的办法，并辅以必要的行政手段，对错误做法进行干预，其他方面要随着经济改革的加深做深入研究</p>
-<blockquote>
-<p>原文的末尾</p>
-<p>总之，经济工作一要搞活，二要严格纪律。搞活以后，既有正当的也有不正当的，就有人要钻空子。因此，越是搞活了，越要严格纪律，越要加强监督。我们要承认企业有自己的经济利益，这并不可怕；企业计较自己的经济利益，也不奇怪。这样，企业才有内在的经济动力，才有真正的积极性、主动性。上级领导机关要善于运用经济杠杆，采取经济的办法，并辅之以必要的行政手段，对企业离开社会主义轨道的错误作法进行干预，把企业关心自己的经济利益引导上正确的方向，使企业自身的利益同国家和社会的整体利益结合起来，推动生产的发展。经济搞活以后的新情况、新问题不止这些，还表现在许多方面，我们要很好研究解决。</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>阅读 书籍</tag>
       </tags>
   </entry>
   <entry>
@@ -765,6 +774,106 @@ M3U8的用途：在线播放： 主要用于指导流媒体播放器如何播放
 <h1 id="本期总结"><a href="#本期总结" class="headerlink" title="本期总结"></a>本期总结</h1><p>本期对赵紫阳文集的第一章，《研究新情况，全面贯彻调整的方针》的第一部分，主要涉及了赵紫阳对于80年代的中国经济情况的认识，初步的对刚刚走出文革的中国如何进行经济改革，经济改革要面对哪些问题，针对这些问题的可行性方案探讨，都在本章中涉及</p>
 <blockquote>
 <p>引用来源：《赵紫阳文集》1.《研究新情况，全面贯彻调整的方针》</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>阅读 书籍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>赵紫阳文集阅读1-2</title>
+    <url>/06/</url>
+    <content><![CDATA[<h1 id="《研究新情况，全面贯彻调整的方针》1-2"><a href="#《研究新情况，全面贯彻调整的方针》1-2" class="headerlink" title="《研究新情况，全面贯彻调整的方针》1-2"></a>《研究新情况，全面贯彻调整的方针》1-2</h1><h2 id="关于商业问题"><a href="#关于商业问题" class="headerlink" title="关于商业问题"></a>关于商业问题</h2><h3 id="当下的问题"><a href="#当下的问题" class="headerlink" title="当下的问题"></a>当下的问题</h3><p>流通环节问题，工商关系问题，农业收购，推销问题。除工农业外，也应该抓好商业，解决流通领域问题</p>
+<span id="more"></span>
+
+<blockquote>
+<p>现在，流通环节的问题相当多，工业方面有个工商关系问题，农业方面也有个收购、推销问题。除抓工业、农业外，各级党委应当关心商业，抓商业，解决流通领域的问题。商业问题里面，一方面是商业本身有些问题，商业部门应当好好改进自己的工作；但另一方面商业确实也有很多问题需要地方党委帮助它解决。</p>
+</blockquote>
+<h3 id="第一个问题"><a href="#第一个问题" class="headerlink" title="第一个问题"></a>第一个问题</h3><p>要有计划的进行商业体制改革，商业活不了，工农业就活不了</p>
+<p>流通环节的改革要有步骤的计划，太猛会导致价格波动，要沿用1975年的办法</p>
+<blockquote>
+<p>第一个问题是商业体制必须改革。但是改革只能有步骤地进行，改得太猛也容易引起物价波动等问题。大体上要恢复一九五七年的办法，有些容易恢复，有些一下恢复不了，要有步骤、有计划地恢复。体制不改，商业活不了。</p>
+</blockquote>
+<h3 id="第二个问题"><a href="#第二个问题" class="headerlink" title="第二个问题"></a>第二个问题</h3><p>要加强基础的商业设施的建设，如仓库，冷冻设备等。如果不发展这些商业设施，生成发展的才好，由于不能及时的储藏和收购，会造成极大的浪费。要想办法在财政中留取部分用于后续的建设，和还款</p>
+<blockquote>
+<p>第二个问题就是要加强商业设施的建设。商业设施，如仓库、冷冻设备、冷藏车这些东西跟不上，这也是目前我们经济工作中的一个很突出的薄弱环节。我们现在搞调整，也要包括解决这一方面的问题。现在仓库、冷冻、冷藏车等设施不足，还是以前那个状况，你再发展生产，发展越多，由于不能及时收购和贮藏，浪费越大，多少年来由于商业设施跟不上，造成的浪费不知有多大。农产品发展起来，特别是鲜活商品多起来了，你不搞冷库、冷藏车这些设备，商业部门就没有办法，就不收购，你再责备也不行，这是个迫切要求解决的问题。今年起，我们各级都要拿一点钱搞商业设施。财政上还要进一步研究怎么给商业系统规定一点灵活的政策，解决投资问题。如从利润中留点成，或者可以先预支点钱，设施先搞起来，建好了以后再还。</p>
+</blockquote>
+<h2 id="关于调整问题"><a href="#关于调整问题" class="headerlink" title="关于调整问题"></a>关于调整问题</h2><h3 id="总结以上的内容"><a href="#总结以上的内容" class="headerlink" title="总结以上的内容"></a>总结以上的内容</h3><p>《研究新情况，全面贯彻调整的方针》1-1：<a href="%E3%80%8A%E7%A0%94%E7%A9%B6%E6%96%B0%E6%83%85%E5%86%B5%EF%BC%8C%E5%85%A8%E9%9D%A2%E8%B4%AF%E5%BD%BB%E8%B0%83%E6%95%B4%E7%9A%84%E6%96%B9%E9%92%88%E3%80%8B1">笔记链接</a></p>
+<p>以上的问题都在三年调整的总题目中，要全面贯彻调整的方针，要清楚过去错误的点（1），明确当下关键的点（2）</p>
+<blockquote>
+<ol>
+<li></li>
+</ol>
+<p>过去经济工作中矛盾的焦点，是基本建设战线过长，投资过多，挤了农业，挤了轻工业，挤了人民生活</p>
+</blockquote>
+<blockquote>
+<p>2</p>
+<p>调整的关键是要压积累，下基建，加强薄弱环节。在这个问题上，要下最大的决心，不能小调，要大调，要从国民经济发展的全局出发，压缩长线，加强短线。剃平头不能达到调整的目的。越是财力小，越要集中投资，保证重点，打好歼灭战。</p>
+</blockquote>
+<p>调整不是简单的压基建，而是引起一场变革。因为它牵涉到社会的方方面面，基建规模缩小后，会引起一系列的问题，从而暴露过去掩盖的问题</p>
+<p>现在是形势逼人，非改不可。要正确认识调整中的新形势，不要只看到困难的一面，也要看到着大好时机，才能明确应该怎么做（3），才能把我们要做的做好</p>
+<blockquote>
+<p>3</p>
+<p>我们要正确认识调整中出现的新形势，不能只看到调整带来的困难的一面，也要看到这正是工业进行改造的大好时机，实行市场调节的大好时机，进行计划、物资等管理体制改革的大好时机。我们要因势利导，趁热打铁，抓住调整这个中心环节，并把它同改革、整顿、提高有机地结合起来，逐步建立起国民经济各部门之间比较合理的比例关系。现在的问题是，我们的思想还跟不上，在很多问题上，思想还没有和调整的方针一致起来。我们必须自觉地按照调整的方针去考虑问题，观察形势，安排工作，该上的上，该下的下，齐心协力把经济调整这一仗打好。</p>
+</blockquote>
+<h1 id="《研究新问题-把经济改革搞好》1-1"><a href="#《研究新问题-把经济改革搞好》1-1" class="headerlink" title="《研究新问题　把经济改革搞好》1-1"></a>《研究新问题　把经济改革搞好》1-1</h1><h2 id="四川问题的第一个方面"><a href="#四川问题的第一个方面" class="headerlink" title="四川问题的第一个方面"></a>四川问题的第一个方面</h2><h3 id="当下的矛盾1"><a href="#当下的矛盾1" class="headerlink" title="当下的矛盾1"></a>当下的矛盾1</h3><p>当下的矛盾为，已经初步进行的改革和尚未改革的经济体制和现行规章制度的矛盾。要进一步的改革，改革整个经济体制，在处于调整时期的当下，尚不具备大规模的改革条件，可能由于大改出现各种问题，因此要在当下的条件下多想些办法（4）</p>
+<blockquote>
+<p>4</p>
+<p>一个方面的问题，基本上属于已经进行的初步改革，同尚未改革的整个经济体制、现行规章制度之间的矛盾，也就是通过改革解放出来的生产力，同现在的生产关系中某些方面的矛盾，同上层建筑中某些环节的矛盾。这方面的问题是主要的、大量的。解决这一问题的根本出路，是要进一步地改革，也就是要改革整个经济体制。但目前处于调整时期，进行大改大革的条件还不具备，经验不足，如果看得不准，改得不好，反会引起大的波动，因此不能骤然进行大改大革。但是，也不能对新出现的情况和问题，漠然置之，不去解决。在不能进行大改的情况下，我们必须从现实出发，在领导上、工作上、政策制度上多想办法，积极地解决这些矛盾。</p>
+</blockquote>
+<h3 id="当下的矛盾2"><a href="#当下的矛盾2" class="headerlink" title="当下的矛盾2"></a>当下的矛盾2</h3><p>我们扩大了企业的经营自主权后，出现了一些歪门邪道，投机倒把的行为，这时另外一种性质的问题，并不是改革本身带来的，但我们一方面要扩大下边的权力，搞活经济；另一方面也要做好监督和检查工作，执行纪律和立法工作，严格根据规章制度办事，依法办事，来解决这些问题（5）</p>
+<blockquote>
+<p>5</p>
+<p>另一个方面的问题，就是企业扩大自主权、经济搞活以后，也会出现一些不正当的作法，搞歪门邪道。比如投机倒把，牟取暴利，损公肥私，损人利己，弄虚作假，挖国家墙脚，以邻为壑等等。这些是属于另外一种性质的问题，并不是改革本身带来的，但也是改革中间我们的工作要跟上去的问题。我们一方面要扩大下边的权力，把经济搞活；另一方面监督和检查工作要跟上去，执行纪律和经济立法工作要跟上去，符合规定的不要干涉，违反规定的及时制止。否则就会给某些人以可乘之机。只要加强领导，采取监督、检查、限制的有力措施，这个问题是可以解决的。</p>
+</blockquote>
+<h3 id="对四川初步改革的总结"><a href="#对四川初步改革的总结" class="headerlink" title="对四川初步改革的总结"></a>对四川初步改革的总结</h3><p>首先，改革出现了新的矛盾，新的问题，要提上日程。四川的改革试点早，出现问题和矛盾也早，要加强调查指导，解决新的问题和矛盾。要杜绝试点顺利的观点，情况约好的时候，越容易掉以轻心，当下未对经济体制进行变动的情况下，自下而上的改革问题多，牵扯多，解决的欠妥，就难以前进。</p>
+<p>所以，就四川的情况来看，有很多新问题，要去研究和解决，四川改革的早一些，有责任继续提供经验（6）</p>
+<blockquote>
+<p>6</p>
+<p>我们要研究解决经济搞活以后出现的新矛盾、新问题，必须把它提到议事日程上来。四川的改革试点比较早，出现矛盾和问题也比较早，要使改革健康地发展，必须加强调查研究和具体指导，解决新的矛盾和问题。我们绝不要以为试点比较顺利，总的情况好，就掉以轻心。要知道，改革不进则退。我们是在总的体制没有变动的情况下，自下而上改革的，各方面矛盾很多，牵扯很大，如果不解决新矛盾，就前进不了，甚至已经改了的也巩固不住。所以，从四川改革的情况来看，有一大批新问题，推着我们去研究、去解决。从全国来看，各省都在试点，四川改得早一点，有责任继续提供这方面的经验。</p>
+</blockquote>
+<p>四川的改革，首先是全国广度最大的，经济改革牵一发动全身，带来很多连锁反应，如果我们妥善的解决这些问题，就能为将来积累宝贵的经验。我们一定要有坚定性，长期搞下去，但脚步要稳，从以下方面入手（7）</p>
+<blockquote>
+<p>7</p>
+<p>对于改革和经济搞活以后出现的问题，一方面不要不知所措，重复过去那种“一放就乱，一乱就收，一收就死”的教训，不能一有风吹草动，就犹豫徘徊，走回头路。另一方面，要注意加强领导，深入调查，精心研究，具体分析，因势利导，及时解决前进中出现的问题，在解决问题中不断前进，不要放任自流。</p>
+</blockquote>
+<p>这是一个很好的学习机会，是完成四化建设的一个大问题，有关部门要加强具体指导，要钻研他，学会他（8）</p>
+<blockquote>
+<p>8</p>
+<p>各级党委不要局限在一个地区、一个单位，要从整个经济改革的角度，从全局、从长远来多想一些问题。省委准备以省社会科学院经济研究所为主，结合实际工作的有关部门和理论工作者，搞一个研究机构，集中力量，从理论与实践的结合上去研究改革中的新问题，摸索运动的规律，及时提出方案和对策。</p>
+</blockquote>
+<h2 id="改革中的问题"><a href="#改革中的问题" class="headerlink" title="改革中的问题"></a>改革中的问题</h2><h3 id="自有资金的问题"><a href="#自有资金的问题" class="headerlink" title="自有资金的问题"></a>自有资金的问题</h3><p>对企业经营自主权扩大后，资金增多的问题，首先这是一个较大的数字，在当下国家财政困难的情况下，企业的前要比过去多，从国家角度，要承认他们的利益，所有权，不去征收。但也要加强指导，避免盲目性，不可放手不管，发挥经济的收益，是值得研究的问题</p>
+<h3 id="扩大再生产问题"><a href="#扩大再生产问题" class="headerlink" title="扩大再生产问题"></a>扩大再生产问题</h3><p>企业的自主权扩大了，改革深入了，他们有了资金，就会扩大再生产，要解决如下的问题（9）</p>
+<blockquote>
+<p>9</p>
+<p>第一，在一个行业或一个企业内，研究定出一个合理的内部价格，作为计算利润留成和奖励的依据。上海纺织工业局就是这样搞的。但是，也不要调整得太多、太猛。我们政策的出发点，主要应当考虑直接生产者、直接经营者的积极性。在全行业内部，拉得很平也不行。第二，调整工商利润。第三，从税收上进行调节，有的要减点税，有的要加点税，如资源税、资产税，甚至可以加征企业基金所得税。第四，在企业利润留成比例上区别对待。总之，这个问题要逐步解决，不能急，不能搞平均主义，要注意保护搞得好的企业的利益，要稳步寻找一些解决苦乐不均的妥善办法。</p>
+</blockquote>
+<h3 id="市场调节问题"><a href="#市场调节问题" class="headerlink" title="市场调节问题"></a>市场调节问题</h3><p>在扩大企业的经营自主权，实行市场体制后，要注意计划指导（10），克服生产经营的盲目性。</p>
+<blockquote>
+<p>10</p>
+<p>但也带来一个问题，什么商品短缺利润高，就一拥而上都去搞，以致重复生产，造成浪费。经济领导机关要搞好调查研究，加强市场的预测预报，给企业以指导。在销售方面过去是采购人员满天飞，现在是推销人员满天飞。在一个时期内，对于打开销路，建立经济联系，有它的积极作用。但也要进行指导，采取一些措施，如设货栈、生产资料交易中心、委托代销等，建立经常的渠道，逐步改变推销人员满天飞的状况。</p>
+</blockquote>
+<h3 id="扩大自主权与专业化改组结合的问题"><a href="#扩大自主权与专业化改组结合的问题" class="headerlink" title="扩大自主权与专业化改组结合的问题"></a>扩大自主权与专业化改组结合的问题</h3><p>专业化改组是经济的必然需求，非改不可，过去办法（11）创办的公司，看来是不成功的。搞公司，要从生产需要取法，不要把起初所有的人力财务，各个环节都管理起来，可以搞松散一些，由低到高的发展</p>
+<blockquote>
+<p>11</p>
+<p>过去用行政的办法搞专业公司，看来不成功。上海以一个中心企业为主，把周围同行的小厂联合起来，搞专业化改组，重庆也开始这么搞了，这个办法看来是好的。搞公司，一定要从生产需要出发，不能一开始就搞全能的，把人财物、供产销都管起来。开始可以搞松散的公司，逐步由低级向高级发展。</p>
+</blockquote>
+<h3 id="发挥大城市作用的问题"><a href="#发挥大城市作用的问题" class="headerlink" title="发挥大城市作用的问题"></a>发挥大城市作用的问题</h3><p>要根据扩大自主权后，按经济的内在联系组织商品的生产和流通，要研究如何发挥中心城市的作用、</p>
+<p>要发现哪里出劳力，哪里出资源，共同办厂，或跨省的公司，采取一些方法（12）合理分配经营所得，用这种办法在大中小城市之间，甚至更深一级的行政区域之间简历紧急联系</p>
+<blockquote>
+<p>12</p>
+<p>企业扩大自主权后，有了自己的经济利益，相关的企业就有共同的需要和共同的利益，就要求发展经济联系，要因势利导，建立大城市企业与外地的企业横向的经济联系。组织专业公司，也要建立在企业之间经济联系的基础上，打破条条、块块分割的状况</p>
+</blockquote>
+<h3 id="奖金问题"><a href="#奖金问题" class="headerlink" title="奖金问题"></a>奖金问题</h3><p>要符合政策规定，体现按劳分配精神，杜绝滥发，要检查问题，改正问题，根本的问题要做到国家，集体，个人的利益兼顾（13），必须要坚持按劳分配的原则</p>
+<blockquote>
+<p>13</p>
+<p>凡是符合政策规定，体现了按劳分配，推动了生产的，都要肯定。现在有的单位滥发奖金，主要是违背政策规定，巧立名目，或者是搞平均主义，这些都不能体现按劳分配，不能促进生产发展，要认真检查，坚决改正。根本的问题，还是要做到国家、集体、个人利益的兼顾，保证国家多得。奖金的发放，必须坚持按劳分配的原则。今年四川试点的企业，继续按照省里规定的办法去办。对于那些滥发奖金，搞歪门邪道，挖国家墙脚的，要进行调查，如果发得不合理，要坚决退回。现在有的单位搞生财之道，不搞正道，而是搞歪门邪道，要抓住最突出的，从严惩处。这需要进行长期的斗争。最怕的是不加分析，眉毛胡子一把抓，一说纠正滥发奖金，连正当的奖励也不让搞了；一说要肯定奖金的作用，连最糟糕的滥发现象也不查了。</p>
+</blockquote>
+<h2 id="总的来说"><a href="#总的来说" class="headerlink" title="总的来说"></a>总的来说</h2><p>一要搞活经济，二要贯彻纪律，越是经济搞活了，越要坚持贯彻纪律，要承认企业的经济利益，且这并不可怕，也不奇怪</p>
+<p>只有这样，企业才有了内在的积极性，能动性。领导机关要妥善运用经济杠杆，采取经济的办法，并辅以必要的行政手段，对错误做法进行干预，其他方面要随着经济改革的加深做深入研究</p>
+<blockquote>
+<p>原文的末尾</p>
+<p>总之，经济工作一要搞活，二要严格纪律。搞活以后，既有正当的也有不正当的，就有人要钻空子。因此，越是搞活了，越要严格纪律，越要加强监督。我们要承认企业有自己的经济利益，这并不可怕；企业计较自己的经济利益，也不奇怪。这样，企业才有内在的经济动力，才有真正的积极性、主动性。上级领导机关要善于运用经济杠杆，采取经济的办法，并辅之以必要的行政手段，对企业离开社会主义轨道的错误作法进行干预，把企业关心自己的经济利益引导上正确的方向，使企业自身的利益同国家和社会的整体利益结合起来，推动生产的发展。经济搞活以后的新情况、新问题不止这些，还表现在许多方面，我们要很好研究解决。</p>
 </blockquote>
 ]]></content>
       <tags>
